@@ -1,0 +1,5 @@
+static/external
+build
+.idea
+node_modules
+.venv
