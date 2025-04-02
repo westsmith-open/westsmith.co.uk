@@ -1,4 +1,4 @@
 header {
-    background: url('/static/img/clouds.svg') no-repeat center top / cover;
+    background: url('../img/clouds.svg') no-repeat center top / cover;
     border-bottom: none !important;
 }
