@@ -5,14 +5,31 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='external/simple.min.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/styles.css') }}"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My New Website</title>
   </head>
   <body>
     <header>
-      <h1>Westsmith</h1>
+      <img
+        src="{{ url_for('static', filename='img/westsmith-logo-192x192.png') }}"
+        alt="Company Logo"
+        class="logo"
+      />
+
       <p>Productivity tools and custom software development</p>
+      <nav>
+        <ul>
+          <li><a href="https://google.com">Products</a></li>
+          <li><a href="https://google.com">Services</a></li>
+          <li><a href="https://google.com">About</a></li>
+          <li><a href="https://google.com">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
