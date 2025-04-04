@@ -1,0 +1,1 @@
+If you would like to discuss bespoke software development please email info@westsmith.co.uk 👷 We specialise in Slack integrations, Monday.com apps and Python development. For a listing of the sort of work undertaken see danielball.com/portfolio 🍏 and please don't forget to visit our Github page ☕
