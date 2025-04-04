@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <a href="{{ url_for('home.index') }}">
+      <a href="{{ url_for('/') }}">
         <img
           src="{{ url_for('static', filename='img/westsmith-logo-192x192.png') }}"
           alt="Company Logo"
@@ -25,8 +25,8 @@
       <p>Productivity tools and custom software development</p>
       <nav>
         <ul>
-          <li><a href="{{ url_for('products.index') }}">Products</a></li>
-          <li><a href="{{ url_for('services.index') }}">Services</a></li>
+          <li><a href="{{ url_for('products') }}">Products</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
         </ul>
       </nav>
     </header>
