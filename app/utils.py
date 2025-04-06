@@ -1,4 +1,7 @@
+from bs4 import BeautifulSoup
 import os
+from pathlib import Path
+
 import markdown
 from flask import Flask, render_template
 
@@ -6,6 +9,17 @@ from flask import Flask, render_template
 def load_markdown(filepath: str) -> str:
     with open(filepath, "r", encoding="utf-8") as f:
         return markdown.markdown(f.read(), extensions=["fenced_code", "tables"])
+
+
+def fix_rel_paths(html_content, base_url):
+    soup = BeautifulSoup(html_content, "html.parser")
+    for tag in soup.find_all("a", href=True):
+        href = tag["href"]
+        if href.startswith("./"):
+            target = href[2:]
+            new_href = f"{base_url}/{target}" if base_url else f"./{target}"
+            tag["href"] = new_href
+    return str(soup)
 
 
 def create_routes(app: Flask, md_dir: str):
@@ -25,8 +39,6 @@ def create_routes(app: Flask, md_dir: str):
                 route_parts[-1] = file[:-3]  # remove '.md'
 
             route_path = "/" + "/".join(route_parts)
-            if is_index:
-                route_path += "/"  # Ensure trailing slash for index pages
 
             endpoint_name = ".".join(route_parts) or "index"
             html_content = load_markdown(full_path)
@@ -39,7 +51,12 @@ def create_routes(app: Flask, md_dir: str):
 
                 return view
 
+            html_content = fix_rel_paths(html_content, route_path)
             app.add_url_rule(
                 route_path, endpoint=endpoint_name, view_func=make_view(html_content)
             )
+            Path(f"build{route_path}").mkdir(parents=True, exist_ok=True)
+            with open(f"build{route_path}/index.html", "w") as f:
+                with app.app_context(), app.test_request_context():
+                    f.write(make_view(html_content)())
             print(f"Adding {endpoint_name} ({route_path})")
