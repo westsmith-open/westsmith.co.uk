@@ -1,4 +1,4 @@
-name: Deploy Frozen Flask to GitHub Pages
+name: Deploy Build to GitHub Pages
 
 on:
   push:
