@@ -32,7 +32,7 @@ jobs:
 
       - name: Freeze Flask site
         run: |
-          python freeze.py
+          python build.py
 
       - name: Upload static files as artifact
         id: deployment
