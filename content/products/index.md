@@ -22,7 +22,7 @@ These products extend your Monday.com workflows with smart, automation-friendly 
 
 Extend Slack with lightweight automation that brings more clarity into conversations:
 
-- **Create a Chart for Slack**  
+- [**Make a Chart for Slack**](./make-a-chart)
   A simple Slack command that turns pasted data into quick charts.  
   Ideal for sharing trends and metrics right where your team is talking.
 

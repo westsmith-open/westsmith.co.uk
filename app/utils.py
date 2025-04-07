@@ -17,7 +17,7 @@ def _fix_rel_paths(html_content, base_url):
         href = tag["href"]
         if href.startswith("./"):
             target = href[2:]
-            new_href = f"{base_url}/{target}" if base_url else f"./{target}"
+            new_href = f"{base_url}/{target}" if base_url != "/" else f"./{target}"
             tag["href"] = new_href
     return str(soup)
 
