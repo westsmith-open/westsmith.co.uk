@@ -22,13 +22,15 @@
           class="logo"
       /></a>
       <p>{{ title }}</p>
-      <nav>
-        <ul>
-          {% for page in nav %}
-            <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
+      {% if nav %}
+        <nav>
+          <ul>
+            {% for nav_link, nav_title in nav.items() %}
+              <li><a href="{{ nav_link }}">{{ nav_title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% endif %}
     </header>
 
     <main>{% block content %}{% endblock %}</main>

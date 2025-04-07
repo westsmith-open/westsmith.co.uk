@@ -46,50 +46,64 @@ def _dir_to_paths(root, dir, md_dir):
     return route_parts, route_path
 
 
+def build_nav(dirs, files, root, md_dir):
+    nav = {}
+    for file in files:
+        if not file.endswith(".md") or file == "index.md":
+            continue
+        _, route_parts, route_path = _file_to_paths(root, file, md_dir)
+        nav[route_path] = route_parts[-1].replace("-", " ").capitalize()
+    for dir in dirs:
+        route_parts, route_path = _dir_to_paths(root, dir, md_dir)
+        if route_path == "/":
+            continue
+        nav[route_path] = route_parts[-1].replace("-", " ").capitalize()
+    for file in files:
+        if not file.endswith(".md"):
+            continue
+    return nav
+
+
+def build_title(route_parts):
+    title_parts = []
+    if not route_parts:
+        return "Productivity tools and custom software development"  # TODO - make home title configurable
+    else:
+        for part in route_parts:
+            title_parts.append(part.replace("-", " ").capitalize())
+    return " - ".join(title_parts)
+
+
 def create_routes(app: Flask, md_dir: str, build=False):
     for root, dirs, files in os.walk(md_dir):
-        nav = [{"link": "/", "title": "Home"}]
         for file in files:
-            _, route_parts, route_path = _file_to_paths(root, file, md_dir)
-            if route_path == "/":
-                continue
-            nav.append({"link": route_path, "title": route_parts[-1].title()})
-        for dir in dirs:
-            route_parts, route_path = _dir_to_paths(root, dir, md_dir)
-            if route_path == "/":
-                continue
-            nav.append({"link": route_path, "title": route_parts[-1].title()})
-        for file in files:
-            if not file.endswith(".md"):
-                continue
-
             full_path, route_parts, route_path = _file_to_paths(root, file, md_dir)
+            nav = build_nav(dirs, files, root, md_dir) if file == "index.md" else {}
+            title = build_title(route_parts)
 
             endpoint_name = ".".join(route_parts) or "index"
             html_content = _load_markdown(full_path)
             html_content = _fix_rel_paths(html_content, route_path)
 
-            def make_view(
-                content,
-                title=(
-                    route_parts[-1]
-                    if route_parts
-                    else "Productivity tools and custom software development"
-                ),
-            ):
+            def make_view(content, nav, title):
                 def view():
                     return render_template(
-                        "page.html", content=content, title=title.title(), nav=nav
+                        "page.html",
+                        content=content,
+                        title=title,
+                        nav=nav,
                     )
 
                 return view
 
             print(f"Adding {endpoint_name} ({route_path})")
             app.add_url_rule(
-                route_path, endpoint=endpoint_name, view_func=make_view(html_content)
+                route_path,
+                endpoint=endpoint_name,
+                view_func=make_view(html_content, nav, title),
             )
             if build:
                 Path(f"build{route_path}").mkdir(parents=True, exist_ok=True)
                 with open(f"build{route_path}/index.html", "w") as f:
                     with app.app_context(), app.test_request_context():
-                        f.write(make_view(html_content)())
+                        f.write(make_view(html_content, nav, title)())
