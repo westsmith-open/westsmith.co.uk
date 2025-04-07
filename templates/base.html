@@ -15,29 +15,43 @@
   </head>
   <body>
     <header>
-      <a href="{{ url_for('home.index') }}">
+      <a href="{{ url_for('index') }}">
         <img
           src="{{ url_for('static', filename='img/westsmith-logo-192x192.png') }}"
           alt="Company Logo"
           class="logo"
       /></a>
-
-      <p>Productivity tools and custom software development</p>
-      <nav>
-        <ul>
-          <li><a href="{{ url_for('products.index') }}">Products</a></li>
-          <li><a href="{{ url_for('services.index') }}">Services</a></li>
-          <li><a href="{{ url_for('about.index') }}">About</a></li>
-        </ul>
-      </nav>
+      <p>{{ title }}</p>
+      {% if nav %}
+        <nav>
+          <ul>
+            {% for nav_link, nav_title in nav.items() %}
+              <li><a href="{{ nav_link }}">{{ nav_title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% endif %}
     </header>
 
     <main>{% block content %}{% endblock %}</main>
 
     <footer>
       <p>
-        © 2019-2025 Westsmith Ltd • info@westsmith.co.uk • The Incuhive Space,
-        Hursley Park Road, Hursley, Winchester, England, SO21 2JN
+        © 2019-2025 Westsmith Ltd •
+        <a href="mailto:info@westsmith.co.uk">info@westsmith.co.uk</a> • The
+        Incuhive Space, Hursley Park Road, Hursley, Winchester, England, SO21
+        2JN
+      </p>
+      <p>
+        Built with
+        <a href="https://www.python.org/">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            alt="Python Logo"
+            width="20"
+            height="20"
+          />Python</a
+        >
       </p>
     </footer>
   </body>
