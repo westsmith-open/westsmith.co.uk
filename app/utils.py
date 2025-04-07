@@ -22,7 +22,7 @@ def fix_rel_paths(html_content, base_url):
     return str(soup)
 
 
-def create_routes(app: Flask, md_dir: str):
+def create_routes(app: Flask, md_dir: str, build=False):
     for root, dirs, files in os.walk(md_dir):
         for file in files:
             if not file.endswith(".md"):
@@ -42,6 +42,7 @@ def create_routes(app: Flask, md_dir: str):
 
             endpoint_name = ".".join(route_parts) or "index"
             html_content = load_markdown(full_path)
+            html_content = fix_rel_paths(html_content, route_path)
 
             def make_view(content, title=route_parts[-1] if route_parts else "Home"):
                 def view():
@@ -51,12 +52,12 @@ def create_routes(app: Flask, md_dir: str):
 
                 return view
 
-            html_content = fix_rel_paths(html_content, route_path)
+            print(f"Adding {endpoint_name} ({route_path})")
             app.add_url_rule(
                 route_path, endpoint=endpoint_name, view_func=make_view(html_content)
             )
-            Path(f"build{route_path}").mkdir(parents=True, exist_ok=True)
-            with open(f"build{route_path}/index.html", "w") as f:
-                with app.app_context(), app.test_request_context():
-                    f.write(make_view(html_content)())
-            print(f"Adding {endpoint_name} ({route_path})")
+            if build:
+                Path(f"build{route_path}").mkdir(parents=True, exist_ok=True)
+                with open(f"build{route_path}/index.html", "w") as f:
+                    with app.app_context(), app.test_request_context():
+                        f.write(make_view(html_content)())
