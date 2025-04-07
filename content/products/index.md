@@ -11,7 +11,7 @@ These products extend your Monday.com workflows with smart, automation-friendly 
 - [**Word Import for Monday.com** ](./word-import-for-monday)
   Upload Word documents and have them converted into structured items in your Monday boards. Perfect for turning briefs and specs into tasks.
 
-- [**Sprout Social Integration for Monday.com** ](./sprout-for-monday)
+- [**Sprout Social Integration for Monday.com** ](./sprout-bridge-for-monday)
   Bring your social performance data into Monday with an integration that connects Sprout Social to your marketing boards.  
   Designed for visibility across campaigns without switching tools.  
   [Sign up for early access](https://your-signup-link.com)

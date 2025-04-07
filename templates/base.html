@@ -21,12 +21,12 @@
           alt="Company Logo"
           class="logo"
       /></a>
-
-      <p>Productivity tools and custom software development</p>
+      <p>{{ title }}</p>
       <nav>
         <ul>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/services">Services</a></li>
+          {% for page in nav %}
+            <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+          {% endfor %}
         </ul>
       </nav>
     </header>
