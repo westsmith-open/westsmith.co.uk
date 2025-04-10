@@ -1,24 +1,36 @@
 header {
-    background: url('../img/clouds.svg') no-repeat center top / cover;
+    background: none !important;
     border-bottom: none !important;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; /* however far you want the clouds to spill */
+    background: url('../img/clouds.svg') no-repeat center top;
+    background-size: 100% auto;
+    z-index: -1;
+}
+
 .logo {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*gap: 0.5rem;*/
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
 }
 
-/*.logo-icon {*/
-/*  height: 40px; !* or whatever fits your design *!*/
-/*  width: auto;*/
-/*}*/
+.logo-icon {
+  height: 100px;
+  width: auto;
+}
 
 .logo-text {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.5rem;
-  color: #164E87; /* Adjust to match your theme */
+  font-family: 'Pacifico';
+  font-size: 3rem;
+  color: #164E87;
 }
 
 h1, h2, h3, h4, h5, h6 {
