@@ -3,6 +3,24 @@ header {
     border-bottom: none !important;
 }
 
+.logo {
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*gap: 0.5rem;*/
+  text-decoration: none;
+}
+
+/*.logo-icon {*/
+/*  height: 40px; !* or whatever fits your design *!*/
+/*  width: auto;*/
+/*}*/
+
+.logo-text {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #164E87; /* Adjust to match your theme */
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-weight: 400;
