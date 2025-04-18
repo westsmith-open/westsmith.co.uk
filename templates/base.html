@@ -9,19 +9,24 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='styles/styles.css') }}"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
   </head>
   <body>
     <header>
-      <a href="{{ url_for('index') }}">
+      <a href="/" class="logo-container">
         <img
-          src="{{ url_for('static', filename='img/westsmith-logo-192x192.png') }}"
-          alt="Company Logo"
-          class="logo"
-      /></a>
-      <h1>{{ title }}</h1>
+          src="/static/img/westsmith.svg"
+          alt="Westsmith logo icon"
+          class="logo-icon"
+        />
+        <span class="logo-text">westsmith</span>
+      </a>
       {% if nav %}
         <nav>
           <ul>
