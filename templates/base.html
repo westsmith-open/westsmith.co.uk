@@ -27,15 +27,16 @@
         />
         <span class="logo-text">westsmith</span>
       </a>
-      {% if nav %}
-        <nav>
-          <ul>
-            {% for nav_link, nav_title in nav.items() %}
-              <li><a href="{{ nav_link }}">{{ nav_title }}</a></li>
-            {% endfor %}
-          </ul>
-        </nav>
-      {% endif %}
+      <nav>
+        <ul>
+          <li>
+            <a href="{{ nav.services.link }}">{{ nav.services.title }}</a>
+          </li>
+          <li>
+            <a href="{{ nav.products.link }}">{{ nav.products.title }}</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>{% block content %}{% endblock %}</main>
