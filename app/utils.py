@@ -56,8 +56,13 @@ def build_title(route_parts):
     return " - ".join(title_parts)
 
 
-def create_routes(app: Flask, md_dir: str, build=False):
-    # dict to map endpoint_name to title, link, route_path and html_content
+def create_endpoints(app: Flask, md_dir: str):
+    """
+    Create a bunch of routes in the flask app from the markdown files. It also outputs
+    other data and meta-data from the markdown files such as the page title, link or
+    url to the endpoint (derived from the location of the markdown file) and the
+    html content rendered from the markdown content.
+    """
     endpoints = {}
     for root, dirs, files in os.walk(md_dir):
         for file in files:
@@ -81,7 +86,12 @@ def create_routes(app: Flask, md_dir: str, build=False):
                     "route_path": route_path,
                     "html_content": html_content,
                 }
+    return endpoints
 
+
+def create_pages(app, endpoints, build=False):
+    """Adds the view function that renders that page for Flask and for building,
+    will output the html file."""
     for endpoint_name, endpoint in endpoints.items():
 
         def make_view(content, title):
@@ -98,7 +108,6 @@ def create_routes(app: Flask, md_dir: str, build=False):
         app.view_functions[endpoint_name] = make_view(
             endpoint["html_content"], endpoint["title"]
         )
-
         if build:
             Path(f"build{endpoint["route_path"]}").mkdir(parents=True, exist_ok=True)
             with open(f"build{endpoint["route_path"]}/index.html", "w") as f:
