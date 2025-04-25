@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 from flask import Flask
-from .utils import create_routes
+from .utils import create_endpoints, create_pages
 
 
 def _make_flask_app():
@@ -16,10 +16,12 @@ def build_site():
     app = _make_flask_app()
     shutil.rmtree("build", ignore_errors=True)
     shutil.copytree("static", "build/static")
-    create_routes(app, "content", build=True)
+    endpoints = create_endpoints(app, "content")
+    create_pages(app, endpoints, build=True)
 
 
 def run_app():
     app = _make_flask_app()
-    create_routes(app, "content")
+    endpoints = create_endpoints(app, "content")
+    create_pages(app, endpoints)
     return app
