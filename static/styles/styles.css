@@ -147,7 +147,7 @@ main > *:first-child {
 
   /* Hamburger animation classes */
   .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    margin-bottom: -8px;
   }
 
   .hamburger.active span:nth-child(2) {
@@ -155,6 +155,6 @@ main > *:first-child {
   }
 
   .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    margin-top: -8px;
   }
 }
