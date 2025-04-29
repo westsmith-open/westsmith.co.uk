@@ -13,29 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
   </head>
   <body>
     <header>
-      <a href="/" class="logo-container">
-        <img
-          src="/static/img/westsmith.svg"
-          alt="Westsmith logo icon"
-          class="logo-icon"
-        />
-        <span class="logo-text">westsmith</span>
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="{{ nav.services.link }}">{{ nav.services.title }}</a>
-          </li>
-          <li>
-            <a href="{{ nav.products.link }}">{{ nav.products.title }}</a>
-          </li>
-        </ul>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img
+              src="/static/img/westsmith.svg"
+              alt="Westsmith logo icon"
+              class="logo-icon"
+            />
+            <span class="logo-text">westsmith</span>
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="{{ nav.services.link }}">
+              {{ nav.services.title }}
+            </a>
+            <a class="navbar-item" href="{{ nav.products.link }}"
+              >{{ nav.products.title }}
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -62,3 +83,4 @@
     </footer>
   </body>
 </html>
+<script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
