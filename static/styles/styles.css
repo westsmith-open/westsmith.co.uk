@@ -140,9 +140,18 @@ main > *:first-child {
     right: 0;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 2rem;
+  header nav ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  header nav ul li {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
   }
 
   /* Hamburger animation classes */
