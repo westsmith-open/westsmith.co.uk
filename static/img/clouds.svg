@@ -12,7 +12,7 @@
         <circle cx="490"  cy="100" r="50"/>
         <circle cx="580"  cy="85" r="80"/>
         <circle cx="680"  cy="95" r="75"/>
-        <circle cx="800"  cy="85" r="90"/>
+        <circle cx="800"  cy="100" r="90"/>
         <circle cx="860"  cy="100" r="70"/>
     </g>
 

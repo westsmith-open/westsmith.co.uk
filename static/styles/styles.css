@@ -1,15 +1,3 @@
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 400px;
-  background: url("../img/clouds.svg") no-repeat center top;
-  background-size: 100% auto;
-  z-index: -1;
-}
-
 header {
   background: none !important;
   border-bottom: none !important;
@@ -17,6 +5,22 @@ header {
   align-items: center;
   justify-content: space-between; /* moves nav to the right */
   padding: 0 1rem;
+}
+
+.clouds-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.clouds-svg img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .logo-container {
