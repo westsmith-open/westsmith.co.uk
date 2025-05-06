@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="section">
+    <hr />
+    <div class="apps-container">
+      <div class="text-content">
+        <h2>Our Apps</h2>
+        <p>
+          We develop cutting-edge mobile and desktop applications that transform
+          the way you work and play. Our suite of apps combines innovative
+          technology with user-friendly design to deliver exceptional
+          experiences.
+        </p>
+        <ul>
+          <li>Mobile Applications</li>
+          <li>Desktop Software</li>
+          <li>Cross-platform Solutions</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img
+          src="/static/images/apps-showcase.jpg"
+          alt="Our Applications"
+          class="section-image"
+        />
+      </div>
+    </div>
+
+    <hr />
+    <div class="services-container">
+      <div class="image-content">
+        <img
+          src="/static/images/services-showcase.jpg"
+          alt="Our Services"
+          class="section-image"
+        />
+      </div>
+      <div class="text-content">
+        <h2>Our Services</h2>
+        <p>
+          We provide comprehensive software development services tailored to
+          your needs. From custom development to cloud solutions, our expert
+          team delivers results that drive your business forward.
+        </p>
+        <ul>
+          <li>Custom Software Development</li>
+          <li>Cloud Integration</li>
+          <li>Technical Consulting</li>
+          <li>Maintenance & Support</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+    <div class="about-container">
+      <div class="text-content">
+        <h2>About Us</h2>
+        <p>
+          Founded with a vision to revolutionize the software industry, our
+          company brings together passionate developers, designers, and
+          innovators. We believe in creating technology that makes a difference
+          in people's lives.
+        </p>
+        <p>
+          With years of experience and a commitment to excellence, we've
+          successfully delivered hundreds of projects and helped businesses
+          across the globe achieve their digital transformation goals.
+        </p>
+      </div>
+      <div class="image-content">
+        <img
+          src="/static/images/about-company.jpg"
+          alt="About Our Company"
+          class="section-image"
+        />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .section {
+      padding: 2rem 0;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #ddd;
+      margin: 2rem 0;
+    }
+
+    .apps-container,
+    .services-container,
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    .text-content,
+    .image-content {
+      flex: 1;
+    }
+
+    .section-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-content h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .text-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .text-content ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .text-content ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .apps-container,
+      .services-container,
+      .about-container {
+        flex-direction: column;
+      }
+
+      .services-container {
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+{% endblock %}
