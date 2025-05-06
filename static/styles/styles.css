@@ -107,11 +107,15 @@ hr {
   margin: 2rem 0;
 }
 
-.section {
+.section h2 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.content-wrapper {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
 }
 
 .text-content,
@@ -169,8 +173,15 @@ hr {
   border-radius: 3px;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .section:nth-child(2) .content-wrapper {
+    flex-direction: column-reverse;
+  }
+
   .hamburger {
     display: block; /* Show hamburger on mobile */
   }
