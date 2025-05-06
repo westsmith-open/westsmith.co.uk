@@ -100,10 +100,6 @@ main > *:first-child {
   padding-top: 0;
 }
 
-.section {
-  padding: 2rem 0;
-}
-
 hr {
   border: 0;
   height: 1px;
@@ -111,9 +107,7 @@ hr {
   margin: 2rem 0;
 }
 
-.apps-container,
-.services-container,
-.about-container {
+.section {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -128,8 +122,6 @@ hr {
 .section-image {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .text-content h2 {
