@@ -32,29 +32,6 @@ And don't forget to check out our open-source work on [GitHub](https://github.co
 
 ---
 
-## Clients
-
-We’ve delivered solutions for companies of all shapes and sizes — from startups to global organisations. Some of the clients we’ve worked with include:
-
-- [Company A]  
-- [Company B]  
-- [Company C]  
-*(Add real client names here, if permitted)*
-
----
-
-## What People Say
-
-> “Westsmith understood our needs faster than anyone else and delivered a Monday.com integration that saved hours of admin time every week.”  
-> – [Client Name], [Company]
-
-> “Daniel and the team were incredible — they built us a Slack integration that genuinely changed how we work.”  
-> – [Another Client], [Role or Company]
-
-*(Add more real quotes if you have them — even 2-3 can go a long way)*
-
----
-
 ## Let's Talk
 
 If you’d like to explore working together, send us an email:  
