@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicons/favicon.ico') }}"
+    />
+    <link
       rel="stylesheet"
       href="{{ url_for('static', filename='external/simple.min.css') }}"
     />
@@ -12,6 +17,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,17 +71,18 @@
         Incuhive Space, Hursley Park Road, Hursley, Winchester, England, SO21
         2JN • UK Company Number 11859881 • VAT Number GB 325417026
       </p>
-      <p>
-        Built with
-        <a href="https://www.python.org/">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-            alt="Python Logo"
-            width="20"
-            height="20"
-          />Python</a
-        >
-      </p>
+      <div>
+        <a
+          href="https://www.linkedin.com/company/68701626"
+          class="fa fa-linkedin"
+        ></a>
+        <a href="https://github.com/westsmith-open" class="fa fa-github"></a>
+        <a href="mailto:info@westsmith.co.uk" class="fa fa-envelope"></a>
+        <a
+          href="https://www.youtube.com/@westsmith-apps"
+          class="fa fa-youtube"
+        ></a>
+      </div>
     </footer>
     <script src="{{ url_for('static', filename='js/nav.js') }}"></script>
   </body>

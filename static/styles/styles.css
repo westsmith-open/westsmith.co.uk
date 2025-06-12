@@ -239,3 +239,13 @@ hr {
     flex-direction: column-reverse;
   }
 }
+
+footer .fa {
+  font-size: 24px;
+  margin: 5px 15px;
+  color: #164e87;
+}
+
+footer div {
+  margin: 10px 0;
+}

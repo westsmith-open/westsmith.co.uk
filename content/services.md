@@ -3,13 +3,13 @@ At Westsmith, we build **custom software solutions** that solve real business pr
 We specialise in:
 
 - 🧱 **Custom Software Development**  
-  Tailored applications and tools designed around your exact needs, not off-the-shelf guesses.
+  Tailored applications and tools designed around your exact needs.
 
 - 🤖 **AI Integration**  
   From intelligent automation to natural language interfaces, we help bring the power of AI into your daily operations.
 
 - 🛠️ **Business Workflow Automation**  
-  Automating repetitive tasks across platforms like Slack, monday.com, and beyond. We connect the dots so you can focus on what matters.
+  Automating repetitive tasks across platforms like Slack, monday.com, and beyond.
 
 - 🐍 **Python Development**  
   Robust backend systems, APIs, data pipelines, and more, all built with clean, maintainable Python code.
@@ -17,7 +17,7 @@ We specialise in:
 - 💬 **Slack Integrations**  
   Custom bots, workflows, and integrations that bring business logic directly into your team chat.
 
-- 📋 **monday.com Apps**  
+- 📋 **monday.com apps**  
   Official apps and custom automations built on the monday.com platform to extend what it can do for your team.
 
 ---

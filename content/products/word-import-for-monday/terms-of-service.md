@@ -20,10 +20,10 @@ Last updated: 5th November 2024
 
     2. You retain all rights to the data you input into the Service. By using the Service, you grant us a license to process and display this data solely for the purpose of providing the Service to you.
 
-5. Limitations of Liability
-   1. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+ 5. Limitations of Liability
+    1. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
 
-   2. In no event shall Westsmith Ltd be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+    2. In no event shall Westsmith Ltd be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
 
  6. Changes to Service
 
