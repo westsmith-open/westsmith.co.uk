@@ -121,4 +121,8 @@ def create_pages(app, endpoints, build=False):
             Path(f"build{endpoint["route_path"]}").mkdir(parents=True, exist_ok=True)
             with open(f"build{endpoint["route_path"]}/index.html", "w") as f:
                 with app.app_context(), app.test_request_context():
-                    f.write(make_view(endpoint["html_content"], endpoint["title"])())
+                    f.write(
+                        make_view(
+                            endpoint["html_content"], endpoint["title"], template_to_use
+                        )()
+                    )
