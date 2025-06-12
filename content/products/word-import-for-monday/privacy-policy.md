@@ -1,3 +1,5 @@
+# Word Import Privacy Policy
+
 Last updated: 5th November 2024
 
 1. Introduction
