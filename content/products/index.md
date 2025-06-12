@@ -4,14 +4,14 @@ We build focused, practical tools for modern teams, especially those using **mon
 
 ---
 
-## 🟦 monday.com Apps
+## 🟦 monday.com apps
 
 - [**Word Import for monday.com** ](./word-import-for-monday)
   Upload Word documents and have them converted into monday docs. Perfect for turning briefs and specs into tasks.
 
 ---
 
-## 💬 Slack Apps
+## 💬 Slack apps
 
 - [**Make a Chart for Slack**](https://makeachart.app/)
   A simple Slack command that turns pasted data into quick charts.  
