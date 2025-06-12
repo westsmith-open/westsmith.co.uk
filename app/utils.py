@@ -97,11 +97,11 @@ def create_pages(app, endpoints, build=False):
         template_path = endpoint["route_path"].lstrip("/")
         if not template_path:
             template_path = "index"
-        template_name = f"{template_path}.html"
-        template_file = f"templates/{template_name}"
-        template_to_use = (
-            template_name if os.path.exists(template_file) else "page.html"
-        )
+        template_names = [f"{template_path}.html", f"{template_path}/index.html"]
+        template_to_use = "page.html"
+        for template_name in template_names:
+            if os.path.exists(f"templates/{template_name}"):
+                template_to_use = template_name
 
         def make_view(content, title, template):
             def view():

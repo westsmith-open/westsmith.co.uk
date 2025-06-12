@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="image-content">
+    <img
+      src="/static/images/word_import-900w.png"
+      srcset="
+        /static/images/word_import-300w.png 300w,
+        /static/images/word_import-600w.png 600w,
+        /static/images/word_import-900w.png 900w
+      "
+      sizes="(max-width: 768px) 100vw, 50vw"
+      alt="About Our Company"
+      class="section-image"
+      loading="lazy"
+    />
+  </div>
+  {{ content|safe }}
+{% endblock %}

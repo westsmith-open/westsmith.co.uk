@@ -8,12 +8,11 @@ widths = [300, 600, 900]
 def optimize_image(source_path, output_dir):
     img = Image.open(source_path)
     filename = Path(source_path).stem
+    ext = source_path.suffix.lower()
 
-    # Convert to RGB if the image is in RGBA mode (handles PNG transparency)
-    if img.mode in ("RGBA", "LA"):
-        background = Image.new("RGB", img.size, (255, 255, 255))
-        background.paste(img, mask=img.split()[-1])  # Use the alpha channel as mask
-        img = background
+    is_transparent = img.mode in ("RGBA", "LA") or (
+        ext == ".png" and "transparency" in img.info
+    )
 
     for width in widths:
         # Calculate height maintaining aspect ratio
@@ -21,10 +20,21 @@ def optimize_image(source_path, output_dir):
         height = int(img.size[1] * ratio)
 
         resized = img.resize((width, height), Image.Resampling.LANCZOS)
-        output_path = os.path.join(output_dir, f"{filename}-{width}w.jpg")
 
-        # Always save as JPEG with optimization
-        resized.save(output_path, "JPEG", quality=85, optimize=True)
+        if is_transparent:
+            # Ensure resized image maintains transparency
+            if resized.mode not in ("RGBA", "LA"):
+                resized = resized.convert("RGBA")
+
+            output_path = os.path.join(output_dir, f"{filename}-{width}w.png")
+            resized.save(output_path, "PNG", optimize=True)
+        else:
+            # Convert to RGB if needed (e.g., for JPEG)
+            if resized.mode != "RGB":
+                resized = resized.convert("RGB")
+
+            output_path = os.path.join(output_dir, f"{filename}-{width}w.jpg")
+            resized.save(output_path, "JPEG", quality=85, optimize=True)
 
 
 def process_all_images():
