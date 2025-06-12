@@ -1,3 +1,5 @@
+# Word Import Terms of Service
+
 Last updated: 5th November 2024
 
  1. Acceptance of Terms

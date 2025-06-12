@@ -9,7 +9,7 @@ We work with startups, teams, and businesses to build tailored software that sol
 - Lightweight, maintainable code  
 - Fast, iterative delivery  
 
-### Monday.com & Slack Apps
+### monday.com & Slack Apps
 
 We build smart, focused apps that enhance your workflow inside the tools you already use. See [products page](./products)
 

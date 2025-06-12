@@ -94,10 +94,19 @@ def create_pages(app, endpoints, build=False):
     will output the html file."""
     for endpoint_name, endpoint in endpoints.items():
 
-        def make_view(content, title):
+        template_path = endpoint["route_path"].lstrip("/")
+        if not template_path:
+            template_path = "index"
+        template_names = [f"{template_path}.html", f"{template_path}/index.html"]
+        template_to_use = "page.html"
+        for template_name in template_names:
+            if os.path.exists(f"templates/{template_name}"):
+                template_to_use = template_name
+
+        def make_view(content, title, template):
             def view():
                 return render_template(
-                    "page.html",
+                    template,
                     content=content,
                     title=title,
                     nav=endpoints,
@@ -106,7 +115,7 @@ def create_pages(app, endpoints, build=False):
             return view
 
         app.view_functions[endpoint_name] = make_view(
-            endpoint["html_content"], endpoint["title"]
+            endpoint["html_content"], endpoint["title"], template_to_use
         )
         if build:
             Path(f"build{endpoint["route_path"]}").mkdir(parents=True, exist_ok=True)
