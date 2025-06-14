@@ -18,6 +18,8 @@ def build_site():
     shutil.copytree("static", "build/static")
     endpoints = create_endpoints(app, "content")
     create_pages(app, endpoints, build=True)
+    with open("build/CNAME", "w") as f:
+        f.write("westsmith.co.uk")
 
 
 def run_app():
