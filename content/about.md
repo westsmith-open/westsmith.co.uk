@@ -1,6 +1,4 @@
-## About Us
 
-At **Westsmith**, we deliver high-quality software solutions for organisations that value reliability, speed, and clarity. With over two decades of industry experience behind us, we’ve helped government departments, startups, and enterprise clients solve complex problems and ship production-ready systems.
 
 Our team brings deep expertise in:
 
