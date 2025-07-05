@@ -49,7 +49,7 @@ def _dir_to_paths(root, dir, md_dir):
 def build_title(route_parts):
     title_parts = []
     if not route_parts:
-        return "Productivity tools and custom software development"  # TODO - make home title configurable
+        return "Software that fits your business"  # TODO - make home title configurable
     else:
         for part in route_parts:
             title_parts.append(part.replace("-", " ").capitalize())
