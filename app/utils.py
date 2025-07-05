@@ -70,7 +70,7 @@ def create_endpoints(app: Flask, md_dir: str):
             # nav = build_nav(dirs, files, root, md_dir) if file == "index.md" else {}
             title = build_title(route_parts)
 
-            endpoint_name = ".".join(route_parts) or "index"
+            endpoint_name = ".".join(route_parts).replace("-", "_") or "index"
             html_content = _load_markdown(full_path)
             html_content = _fix_rel_paths(html_content, route_path)
 
