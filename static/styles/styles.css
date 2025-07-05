@@ -302,3 +302,19 @@ footer div {
   line-height: 1.6;
   padding: 0 1rem;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem; /* adds spacing between image and text */
+  margin-top: 1rem;
+}
+
+.flex-container img {
+  max-width: 100%;
+  width: 750px; /* or adjust to your preferred size */
+  height: auto;
+  border-radius: 8px; /* optional: softens image corners */
+}

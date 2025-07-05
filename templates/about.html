@@ -2,36 +2,32 @@
 
 {% block content %}
   <h1>About Us</h1>
-  <div class="section">
-    <div class="content-wrapper">
-      <div class="text-content">
-        <p>
-          Based in King Alfred's Winchester, England, we have years of
-          experience developing applications and solutions for organisations
-          large and small.
-        </p>
-        <p>
-          At <b>Westsmith</b>, we deliver high-quality software solutions for
-          organisations that value reliability, speed, and clarity. With over
-          two decades of industry experience behind us, we’ve helped government
-          departments, startups, and enterprise clients solve complex problems
-          and ship production-ready systems.
-        </p>
-      </div>
-      <div class="image-content">
-        <img
-          src="/static/images/alfred-900w.jpg"
-          srcset="
-            /static/images/alfred-300w.jpg 300w,
-            /static/images/alfred-600w.jpg 600w,
-            /static/images/alfred-900w.jpg 900w
-          "
-          sizes="(max-width: 768px) 100vw, 50vw"
-          alt="Alfred"
-          class="section-image"
-          loading="lazy"
-        />
-      </div>
+  <div class="flex-container">
+    <div>
+      <img
+        src="/static/images/alfred-900w.jpg"
+        srcset="
+          /static/images/alfred-300w.jpg 300w,
+          /static/images/alfred-600w.jpg 600w,
+          /static/images/alfred-900w.jpg 900w
+        "
+        sizes="(max-width: 768px) 100vw, 250px"
+        alt="Alfred"
+        loading="lazy"
+      />
+    </div>
+    <div>
+      <p>
+        Based in King Alfred's Winchester, England, we have years of experience
+        developing applications and solutions for organisations large and small.
+      </p>
+      <p>
+        At <b>Westsmith</b>, we deliver high-quality software solutions for
+        organisations that value reliability, speed, and clarity. With over two
+        decades of industry experience behind us, we’ve helped government
+        departments, startups, and enterprise clients solve complex problems and
+        ship production-ready systems.
+      </p>
     </div>
   </div>
 
