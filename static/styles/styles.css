@@ -1,3 +1,10 @@
+/* Widen the centre column for bigger screens */
+@media (min-width: 1046px) {
+  body {
+    grid-template-columns: 1fr min(55rem, 100%) 1fr;
+  }
+}
+
 header {
   background: none !important;
   border-bottom: none !important;
