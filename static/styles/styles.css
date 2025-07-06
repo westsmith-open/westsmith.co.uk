@@ -47,7 +47,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
 }
@@ -317,4 +317,24 @@ footer div {
   width: 750px; /* or adjust to your preferred size */
   height: auto;
   border-radius: 8px; /* optional: softens image corners */
+}
+
+.call-to-action a {
+  background-color: #007acc;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.quote {
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  height: 1000px;
+}
+
+.map {
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  height: 400px;
 }
