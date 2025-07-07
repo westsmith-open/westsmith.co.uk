@@ -10,8 +10,6 @@ In this article:
 * We show how simple automations (built with Python or cloud tools) can do the work for you
 * We share examples where hours of monthly work became a single click
 
-**Don’t ditch Excel, upgrade it.**
-
 ## The Problem: When Excel Becomes a Bottleneck
 
 Excel is flexible, powerful, and familiar. But when your business processes grow more complex, Excel can start to show its limits. We often see issues like:

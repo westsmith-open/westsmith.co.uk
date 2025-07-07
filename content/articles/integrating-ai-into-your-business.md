@@ -11,8 +11,6 @@ In this article, we explore:
 * What you can do today with off-the-shelf tools
 * When to consider building something more custom
 
-The goal isn’t to chase trends, it is to solve real problems faster, with fewer manual steps.
-
 ---
 
 ## Start Small: Automate Repetitive Tasks

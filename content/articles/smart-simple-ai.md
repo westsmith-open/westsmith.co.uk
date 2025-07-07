@@ -48,7 +48,3 @@ Over time, you’ll build up a toolkit that fits your business, without burning 
 AI doesn’t have to be high-tech to be high-impact. Start with small, smart automations that lighten the load. The tools are here, they’re simple to use, and they’re already helping small businesses punch above their weight.
 
 By working smarter, not harder, you can stay agile, grow sustainably, and focus more on what you do best.
-
----
-
-Would you like a downloadable PDF or blog-friendly HTML version of this?
