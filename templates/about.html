@@ -1,13 +1,41 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta http-equiv="refresh" content="0;url=/" />
-    <script>
-      window.location.href = "/";
-    </script>
-    <title>Page Not Found - Redirecting</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/">home page</a>...</p>
-  </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>About Us</h1>
+  <div class="flex-container">
+    <div>
+      <img
+        src="/static/images/alfred-900w.jpg"
+        srcset="
+          /static/images/alfred-300w.jpg 300w,
+          /static/images/alfred-600w.jpg 600w,
+          /static/images/alfred-900w.jpg 900w
+        "
+        sizes="(max-width: 768px) 100vw, 250px"
+        alt="Alfred"
+        loading="lazy"
+      />
+    </div>
+    <div>
+      <p>
+        Based in King Alfred's Winchester, England, we have years of experience
+        developing applications and solutions for organisations large and small.
+      </p>
+      <p>
+        At <b>Westsmith</b>, we deliver high-quality software solutions for
+        organisations that value reliability, speed, and clarity. We’ve helped
+        government departments, startups, and enterprise clients solve complex
+        problems and ship production-ready systems.
+      </p>
+      <p>
+        We started in 2019, and was found by
+        <a href="http://danielball.com">Daniel Ball</a> to deliver contract
+        software for IBM. In the following years we have delivered contract and
+        freelance work for many different goverment clients and large
+        organisations, such as the Office for National Statistics
+      </p>
+    </div>
+  </div>
+
+  {{ content|safe }}
+{% endblock %}

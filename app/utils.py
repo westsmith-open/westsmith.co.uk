@@ -49,7 +49,7 @@ def _dir_to_paths(root, dir, md_dir):
 def build_title(route_parts):
     title_parts = []
     if not route_parts:
-        return "Productivity tools and custom software development"  # TODO - make home title configurable
+        return "Software that fits your business"  # TODO - make home title configurable
     else:
         for part in route_parts:
             title_parts.append(part.replace("-", " ").capitalize())
@@ -70,7 +70,7 @@ def create_endpoints(app: Flask, md_dir: str):
             # nav = build_nav(dirs, files, root, md_dir) if file == "index.md" else {}
             title = build_title(route_parts)
 
-            endpoint_name = ".".join(route_parts) or "index"
+            endpoint_name = ".".join(route_parts).replace("-", "_") or "index"
             html_content = _load_markdown(full_path)
             html_content = _fix_rel_paths(html_content, route_path)
 

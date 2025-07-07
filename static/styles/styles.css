@@ -1,3 +1,10 @@
+/* Widen the centre column for bigger screens */
+@media (min-width: 1046px) {
+  body {
+    grid-template-columns: 1fr min(55rem, 100%) 1fr;
+  }
+}
+
 header {
   background: none !important;
   border-bottom: none !important;
@@ -47,7 +54,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   margin: 0;
   padding: 0;
 }
@@ -248,4 +255,91 @@ footer .fa {
 
 footer div {
   margin: 10px 0;
+}
+
+.testimonial {
+  font-style: italic;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f5faff;
+  border-radius: 1rem;
+}
+
+.cta-section .button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.lead-in {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  max-width: 700px;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    display: none;
+  }
+
+  .flex-container img {
+    display: none;
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.flex-container img {
+  max-width: 100%;
+  width: 750px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.call-to-action a {
+  background-color: #007acc;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.quote {
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  height: 1000px;
+}
+
+.map {
+  margin: 2rem auto;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  height: 400px;
 }

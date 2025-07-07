@@ -1,15 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <p class="lead-in">
+    Need software that actually makes life easier? That’s what we build.
+  </p>
   <div class="section">
-    <h2>Productivity tools and custom software development</h2>
+    <h2>Software that fits your business</h2>
     <div class="content-wrapper">
       <div class="text-content">
         <p>
-          We deliver working software systems! This includes requirements
-          gathering, system architecture design and full-scale implementation.
+          We help firms work smarter with custom-built software. If you’re
+          struggling with spreadsheets, outdated systems or disconnected tools,
+          we can help make your processes simpler, faster and more reliable.
         </p>
-        <p>We also build apps and custom add-ons for Slack and monday.com</p>
+        <p>
+          Whether it’s a secure dashboard, a tailored workflow, or automating
+          the boring stuff, we build systems that fit how you already work.
+        </p>
       </div>
       <div class="image-content">
         <img
@@ -20,16 +27,18 @@
             /static/images/index3-900w.jpg 900w
           "
           sizes="(max-width: 768px) 100vw, 50vw"
-          alt="About Our Company"
+          alt="Software made simple"
           class="section-image"
           loading="lazy"
         />
       </div>
     </div>
   </div>
+
   <hr />
+
   <div class="section">
-    <h2><a href="/services">Our Services</a></h2>
+    <h2><a href="/services">What We Do</a></h2>
     <div class="content-wrapper">
       <div class="image-content">
         <img
@@ -47,28 +56,35 @@
       </div>
       <div class="text-content">
         <p>
-          We provide comprehensive software development services tailored to
-          your needs. From custom development to cloud solutions, our expert
-          team delivers results that drive your business forward.
+          We design, build and support software tailored to your business. Our
+          goal is to remove frustration, cut down wasted time and create tools
+          that work for real people, not just developers.
         </p>
         <ul>
-          <li>Custom Software Development</li>
-          <li>AI Integration</li>
-          <li>Slack Integration</li>
-          <li>monday.com Integration</li>
+          <li>Custom internal tools and web dashboards</li>
+          <li>Automated workflows and data handling</li>
+          <li>Connecting services like Slack or monday.com</li>
+          <li>Cloud-based systems that grow with your business</li>
         </ul>
       </div>
     </div>
   </div>
+
   <hr />
+
   <div class="section">
-    <h2><a href="/products">Our Apps</a></h2>
+    <h2>Why Choose Us</h2>
     <div class="content-wrapper">
       <div class="text-content">
         <p>
-          We develop applications that transform the way you work and play. Our
-          suite of apps combines innovative technology with user-friendly design
-          to deliver exceptional experiences.
+          We’ve delivered software for the UK government, universities,
+          healthcare providers and small businesses alike. But we’re not a big
+          faceless agency. We’re hands-on, responsive and focused on what
+          actually works.
+        </p>
+        <p>
+          You’ll get direct contact with an experienced developer and clear,
+          jargon-free communication from start to finish.
         </p>
       </div>
       <div class="image-content">
@@ -80,11 +96,35 @@
             /static/images/index1-900w.png 900w
           "
           sizes="(max-width: 768px) 100vw, 50vw"
-          alt="Our Applications"
+          alt="Why Choose Us"
           class="section-image"
           loading="lazy"
         />
       </div>
     </div>
+  </div>
+
+  <hr />
+
+  <div class="section testimonial">
+    <blockquote>
+      “Worked quickly and turned around additional requests and changes quickly
+      and thoroughly. Overall a fantastic experience and would recommend him
+      without reservations.”
+    </blockquote>
+    <cite>— President, Center for Strategy Research</cite>
+  </div>
+
+  <hr />
+
+  <div class="section cta-section">
+    <h2>Let’s talk</h2>
+    <p>
+      Whether you’ve got a project in mind or just want to explore how custom
+      software could help your business, we’re happy to chat.
+    </p>
+    <p>
+      <a href="/contact-us" class="button">Get in touch</a>
+    </p>
   </div>
 {% endblock %}

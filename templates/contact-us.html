@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ content|safe }}
+  <div class="map">
+    <iframe
+      style="height:100%;width:100%;border:0;"
+      src="https://www.google.com/maps/embed/v1/place?q=The+Incuhive+Space,+Hursley+Park+Road,+Hursley,+Winchester,+England,+SO21+2JN&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+    ></iframe>
+  </div>
+  <div id="quote" class="quote">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScMDHpMcY4r2V2LcKBv5SkwIcMJN6oFEcu6ONmye4LOYORL4Q/viewform?embedded=true"
+      style="height:100%;width:100%;border:0;"
+      >Loading…</iframe
+    >
+  </div>
+{% endblock %}
