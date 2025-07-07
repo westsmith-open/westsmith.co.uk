@@ -9,6 +9,6 @@ Our team brings deep expertise in:
 
 We’ve contributed to mission-critical systems for the Office for National Statistics, University of Cambridge, Babylon Health, Vodafone, IBM, and others. Whether supporting large-scale platforms or working with early-stage teams, we bring the same principles: clear communication, pragmatic design, and a focus on delivering value early.
 
-We're hands-on engineers who aren’t afraid to dive into legacy code, modernise cloud infrastructure, or build from the ground up. We also keep a sharp eye on emerging technologies — including LLMs and AI agents — to help our clients stay ahead.
+We're hands-on engineers who aren’t afraid to dive into legacy code, modernise cloud infrastructure, or build from the ground up. We also keep a sharp eye on emerging technologies, including LLMs and AI agents.
 
 If you're looking for a trusted software partner who combines technical depth with delivery focus, let's talk.

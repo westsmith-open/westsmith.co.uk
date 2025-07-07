@@ -263,18 +263,6 @@ footer div {
   text-align: center;
 }
 
-.testimonial blockquote {
-  quotes: "“" "”" "‘" "’";
-}
-
-.testimonial blockquote::before {
-  content: open-quote;
-}
-
-.testimonial blockquote::after {
-  content: close-quote;
-}
-
 .testimonial cite {
   display: block;
   margin-top: 1rem;
