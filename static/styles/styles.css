@@ -298,20 +298,30 @@ footer div {
   padding: 0 1rem;
 }
 
+@media (max-width: 768px) {
+  .flex-container {
+    display: none;
+  }
+
+  .flex-container img {
+    display: none;
+  }
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 2rem; /* adds spacing between image and text */
+  gap: 2rem;
   margin-top: 1rem;
 }
 
 .flex-container img {
   max-width: 100%;
-  width: 750px; /* or adjust to your preferred size */
+  width: 750px;
   height: auto;
-  border-radius: 8px; /* optional: softens image corners */
+  border-radius: 8px;
 }
 
 .call-to-action a {
