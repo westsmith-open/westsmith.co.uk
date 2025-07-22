@@ -11,4 +11,4 @@ We’ve contributed to mission-critical systems for the Office for National Stat
 
 We're hands-on engineers who aren’t afraid to dive into legacy code, modernise cloud infrastructure, or build from the ground up. We also keep a sharp eye on emerging technologies, including LLMs and AI agents.
 
-If you're looking for a trusted software partner who combines technical depth with delivery focus, [let's talk](contact-us).
+If you're looking for a trusted software partner who combines technical depth with delivery focus, [let's talk](/contact-us).
