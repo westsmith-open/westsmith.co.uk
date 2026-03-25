@@ -6,7 +6,13 @@ from .utils import create_endpoints, create_pages
 
 def _make_flask_app():
     Path("static/external").mkdir(exist_ok=True)
-    shutil.copy("node_modules/simpledotcss/simple.min.css", "static/external")
+    # Combine simple.min.css and styles.css into one file for better performance
+    with open("node_modules/simpledotcss/simple.min.css") as simple_css:
+        simple_content = simple_css.read()
+    with open("static/styles/styles.css") as custom_css:
+        custom_content = custom_css.read()
+    with open("static/external/combined.min.css", "w") as combined:
+        combined.write(simple_content + "\n" + custom_content)
     app = Flask(__name__, template_folder="../templates")
     app.static_folder = Path("../static")
     return app

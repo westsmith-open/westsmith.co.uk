@@ -26,4 +26,3 @@ Create new monday.com docs from your existing MS Word files.
 * [Documentation](./documentation)
 * [Privacy Policy](./privacy-policy)
 * [Terms of Service](./terms-of-service)
-

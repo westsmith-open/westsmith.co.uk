@@ -14,10 +14,10 @@ We build focused, practical tools for modern teams, especially those using **mon
 ## Slack apps
 
 - [**Make a Chart for Slack**](https://makeachart.app/)
-  A simple Slack command that turns pasted data into quick charts.  
+  A simple Slack command that turns pasted data into quick charts.
   Ideal for sharing trends and metrics right where your team is talking.
 
 ---
 
-Want early access or custom integrations?  
+Want early access or custom integrations?
 [info@westsmith.co.uk](mailto:info@westsmith.co.uk)
