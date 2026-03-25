@@ -1,4 +1,7 @@
 description: A practical guide to AI tools for small businesses. Learn how ChatGPT, Zapier and lightweight automations can save time and keep your team ahead.
+title: Articles | Smart Simple AI | Westsmith
+
+# Smart, Simple AI: How Small Businesses Can Use Automation to Stay Ahead
 
 ## Easy Wins: Plug-and-Play AI Tools
 

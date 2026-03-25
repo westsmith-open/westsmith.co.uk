@@ -52,7 +52,7 @@ def _dir_to_paths(root, dir, md_dir):
 def build_title(route_parts):
     if not route_parts:
         return "Software that fits your business | Westsmith"
-    title_parts = [part.replace("-", " ").capitalize() for part in route_parts]
+    title_parts = [part.replace("-", " ").title() for part in route_parts]
     return " | ".join(title_parts) + " | Westsmith"
 
 
@@ -75,9 +75,7 @@ def create_endpoints(app: Flask, md_dir: str):
             html_content = _fix_rel_paths(html_content, route_path)
             title = meta.get("title") or build_title(route_parts)
             nav_title = (
-                route_parts[-1].replace("-", " ").capitalize()
-                if route_parts
-                else "Home"
+                route_parts[-1].replace("-", " ").title() if route_parts else "Home"
             )
             description = meta.get("description")
 
