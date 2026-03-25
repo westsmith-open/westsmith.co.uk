@@ -1,0 +1,62 @@
+repos:
+  # --- Ruff: fast Python linter + formatter (replaces flake8, isort, pyupgrade, etc.) ---
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.2
+    hooks:
+      - id: ruff-check
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  # --- Bandit: security-focused static analysis ---
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.3
+    hooks:
+      - id: bandit
+        args: [-c, pyproject.toml]
+        additional_dependencies: ["bandit[toml]"]
+
+  # --- Basic file hygiene (near-zero cost, built-in hooks) ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: check-case-conflict        # catches case-insensitive filesystem issues
+      - id: check-symlinks
+      - id: detect-private-key         # catches accidentally committed keys
+      - id: debug-statements           # catches leftover breakpoint() / pdb calls
+      - id: check-ast                  # validates Python files parse correctly
+      - id: check-docstring-first      # catches code before module docstrings
+      - id: name-tests-test            # enforces test_*.py naming convention
+        args: [--pytest-test-first]
+
+  # --- Pyupgrade: modernise Python syntax automatically ---
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.21.2
+    hooks:
+      - id: pyupgrade
+        args: [--py311-plus]           # adjust to your minimum Python version
+
+  # --- Dead code detection ---
+  - repo: https://github.com/jendrikseipp/vulture
+    rev: v2.14
+    hooks:
+      - id: vulture
+        args: [--min-confidence=80, "--exclude=.venv", .]
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.47.0
+    hooks:
+    - id: markdownlint
+      args: [--disable, MD013, MD033]
+
+default_language_version:
+  python: python3.14

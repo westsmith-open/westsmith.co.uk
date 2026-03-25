@@ -1,5 +1,0 @@
-Flask
-black
-beautifulsoup4
-markdown
-pillow

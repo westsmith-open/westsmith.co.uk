@@ -247,14 +247,21 @@ hr {
   }
 }
 
-footer .fa {
-  font-size: 24px;
-  margin: 5px 15px;
-  color: #164e87;
+footer .social-links {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-footer div {
-  margin: 10px 0;
+footer .social-links a {
+  color: #164e87;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer .social-links a:hover {
+  color: #007acc;
 }
 
 .testimonial {

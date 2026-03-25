@@ -10,7 +10,7 @@ Last updated: 5th November 2024
 
     Word Import is a monday.com app that allows users to create Workdocs for monday.com from MS Word files.
 
- 3. User Responsibilities 
+ 3. User Responsibilities
     1. You agree not to use the Service for any unlawful purpose or in any way that could damage, disable, overburden, or impair the Service.
 
     2. You are responsible for ensuring you have the right to use, process, and share any data you input into the Service.

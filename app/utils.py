@@ -7,7 +7,7 @@ from flask import Flask, render_template, url_for
 
 
 def _load_markdown(filepath: str) -> str:
-    with open(filepath, "r", encoding="utf-8") as f:
+    with open(filepath, encoding="utf-8") as f:
         return markdown.markdown(f.read(), extensions=["fenced_code", "tables"])
 
 
@@ -93,7 +93,6 @@ def create_pages(app, endpoints, build=False):
     """Adds the view function that renders that page for Flask and for building,
     will output the html file."""
     for endpoint_name, endpoint in endpoints.items():
-
         template_path = endpoint["route_path"].lstrip("/")
         if not template_path:
             template_path = "index"
@@ -118,8 +117,8 @@ def create_pages(app, endpoints, build=False):
             endpoint["html_content"], endpoint["title"], template_to_use
         )
         if build:
-            Path(f"build{endpoint["route_path"]}").mkdir(parents=True, exist_ok=True)
-            with open(f"build{endpoint["route_path"]}/index.html", "w") as f:
+            Path(f"build{endpoint['route_path']}").mkdir(parents=True, exist_ok=True)
+            with open(f"build{endpoint['route_path']}/index.html", "w") as f:
                 with app.app_context(), app.test_request_context():
                     f.write(
                         make_view(
