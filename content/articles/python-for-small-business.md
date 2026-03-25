@@ -1,3 +1,5 @@
+description: Discover what Python can do for your business, even if you’re not technical. Automate reports, connect tools and reduce manual work without a full dev team.
+
 # What Python Can Do for Your Business (Even if You’re Not Technical)
 
 ![Python](/static/images/python-900w.jpg)

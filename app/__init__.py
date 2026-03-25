@@ -18,6 +18,9 @@ def _make_flask_app():
     return app
 
 
+BASE_URL = "https://westsmith.co.uk"
+
+
 def build_site():
     app = _make_flask_app()
     shutil.rmtree("build", ignore_errors=True)
@@ -26,6 +29,19 @@ def build_site():
     create_pages(app, endpoints, build=True)
     with open("build/CNAME", "w") as f:
         f.write("westsmith.co.uk")
+    sitemap_urls = "\n".join(
+        f"  <url><loc>{BASE_URL}{ep['route_path']}</loc></url>"
+        for ep in endpoints.values()
+    )
+    with open("build/sitemap.xml", "w") as f:
+        f.write(
+            f'<?xml version="1.0" encoding="UTF-8"?>\n'
+            f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f"{sitemap_urls}\n"
+            f"</urlset>\n"
+        )
+    with open("build/robots.txt", "w") as f:
+        f.write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n")
 
 
 def run_app():

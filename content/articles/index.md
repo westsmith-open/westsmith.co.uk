@@ -1,3 +1,5 @@
+description: Practical articles on software, automation and AI for businesses. From automating Excel tasks to integrating AI tools, written by Westsmith.
+
 # ✍️ Articles
 
 📚 [Integrating AI into Your Business Without the Hype](./integrating-ai-into-your-business) - A practical guide to using AI tools like ChatGPT and custom automations to solve real business problems.

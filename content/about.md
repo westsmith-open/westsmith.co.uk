@@ -1,4 +1,4 @@
-
+description: Westsmith is a UK software consultancy with experience delivering for the ONS, University of Cambridge, IBM, Vodafone and more. Python, cloud and full-stack specialists.
 
 Our team brings deep expertise in:
 

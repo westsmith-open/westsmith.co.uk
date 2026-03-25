@@ -1,3 +1,5 @@
+description: Stop wasting hours on manual spreadsheet work. Learn how Python and cloud automation tools can replace repetitive Excel tasks and save your business time.
+
 # From Spreadsheets to Systems: Automating Your Repetitive Excel Tasks
 
 ![spreadsheet](/static/images/spreadsheet-900w.png)

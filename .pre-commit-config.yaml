@@ -43,7 +43,7 @@ repos:
     rev: v3.21.2
     hooks:
       - id: pyupgrade
-        args: [--py311-plus]           # adjust to your minimum Python version
+        args: [--py313-plus]
 
   # --- Dead code detection ---
   - repo: https://github.com/jendrikseipp/vulture
@@ -59,4 +59,4 @@ repos:
       args: [--disable, MD013, MD033]
 
 default_language_version:
-  python: python3.14
+  python: python3.13

@@ -1,3 +1,5 @@
+description: A practical guide to integrating AI into your business without the hype. From off-the-shelf tools to custom solutions, start small and build from there.
+
 # Integrating AI into Your Business Without the Hype
 
 ![AI](/static/images/ai-900w.jpg)

@@ -37,6 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="rgb(163,223,247)" />
     <meta name="description" content="{{ description if description else 'Westsmith builds custom software for businesses. We create internal tools, automated workflows, dashboards and integrations that fit how you work. Based in Winchester, UK.' }}" />
+    <link rel="canonical" href="https://westsmith.co.uk{{ route_path }}" />
     <title>{{ title }}</title>
   </head>
   <body>
@@ -68,19 +69,19 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="{{ nav.about.link }}">{{ nav.about.title }}</a>
+            <a href="{{ nav.about.link }}">{{ nav.about.nav_title }}</a>
           </li>
           <li>
-            <a href="{{ nav.contact_us.link }}">{{ nav.contact_us.title }}</a>
+            <a href="{{ nav.contact_us.link }}">{{ nav.contact_us.nav_title }}</a>
           </li>
           <li>
-            <a href="{{ nav.services.link }}">{{ nav.services.title }}</a>
+            <a href="{{ nav.services.link }}">{{ nav.services.nav_title }}</a>
           </li>
           <li>
-            <a href="{{ nav.products.link }}">{{ nav.products.title }}</a>
+            <a href="{{ nav.products.link }}">{{ nav.products.nav_title }}</a>
           </li>
           <li>
-            <a href="{{ nav.articles.link }}">{{ nav.articles.title }}</a>
+            <a href="{{ nav.articles.link }}">{{ nav.articles.nav_title }}</a>
           </li>
           <li class="call-to-action">
             <a href="{{ nav.contact_us.link }}#quote">Get a quote</a>

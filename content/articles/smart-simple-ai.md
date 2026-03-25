@@ -1,3 +1,5 @@
+description: A practical guide to AI tools for small businesses. Learn how ChatGPT, Zapier and lightweight automations can save time and keep your team ahead.
+
 ## Easy Wins: Plug-and-Play AI Tools
 
 ![Server](/static/images/server-900w.jpg)

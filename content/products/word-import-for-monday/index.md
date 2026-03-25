@@ -1,3 +1,5 @@
+description: Word Import for monday.com lets you upload MS Word documents and convert them into monday docs. Available on the monday.com marketplace.
+
 # Word Import for monday.com
 
 Create new monday.com docs from your existing MS Word files.

@@ -1,3 +1,5 @@
+description: Custom software development, AI integration, workflow automation and Python development from Westsmith. Practical solutions for real business problems.
+
 # Services
 
 At Westsmith, we build **custom software solutions** that solve real business problems. Whether you need to streamline internal workflows, integrate platforms like Slack or monday.com, or bring AI into your operations, we can help.

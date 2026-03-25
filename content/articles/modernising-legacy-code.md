@@ -1,3 +1,5 @@
+description: Legacy systems don't have to hold you back. Learn how to safely refactor, wrap or rebuild outdated software without disrupting your business.
+
 # Breathing New Life Into Old Code: Modernising Legacy Systems
 
 ![old computer](/static/images/old-computer-900w.jpg)

@@ -6,9 +6,12 @@ import markdown
 from flask import Flask, render_template, url_for
 
 
-def _load_markdown(filepath: str) -> str:
+def _load_markdown(filepath: str) -> tuple[str, dict]:
+    md = markdown.Markdown(extensions=["fenced_code", "tables", "meta"])
     with open(filepath, encoding="utf-8") as f:
-        return markdown.markdown(f.read(), extensions=["fenced_code", "tables"])
+        html = md.convert(f.read())
+    meta = {k: v[0] for k, v in md.Meta.items()} if md.Meta else {}
+    return html, meta
 
 
 def _fix_rel_paths(html_content, base_url):
@@ -47,13 +50,10 @@ def _dir_to_paths(root, dir, md_dir):
 
 
 def build_title(route_parts):
-    title_parts = []
     if not route_parts:
-        return "Software that fits your business"  # TODO - make home title configurable
-    else:
-        for part in route_parts:
-            title_parts.append(part.replace("-", " ").capitalize())
-    return " - ".join(title_parts)
+        return "Software that fits your business | Westsmith"
+    title_parts = [part.replace("-", " ").capitalize() for part in route_parts]
+    return " | ".join(title_parts) + " | Westsmith"
 
 
 def create_endpoints(app: Flask, md_dir: str):
@@ -71,8 +71,15 @@ def create_endpoints(app: Flask, md_dir: str):
             title = build_title(route_parts)
 
             endpoint_name = ".".join(route_parts).replace("-", "_") or "index"
-            html_content = _load_markdown(full_path)
+            html_content, meta = _load_markdown(full_path)
             html_content = _fix_rel_paths(html_content, route_path)
+            title = meta.get("title") or build_title(route_parts)
+            nav_title = (
+                route_parts[-1].replace("-", " ").capitalize()
+                if route_parts
+                else "Home"
+            )
+            description = meta.get("description")
 
             print(f"Adding {endpoint_name} ({route_path})")
             app.add_url_rule(
@@ -82,9 +89,11 @@ def create_endpoints(app: Flask, md_dir: str):
             with app.app_context(), app.test_request_context():
                 endpoints[endpoint_name] = {
                     "title": title,
+                    "nav_title": nav_title,
                     "link": url_for(endpoint_name),
                     "route_path": route_path,
                     "html_content": html_content,
+                    "description": description,
                 }
     return endpoints
 
@@ -102,19 +111,25 @@ def create_pages(app, endpoints, build=False):
             if os.path.exists(f"templates/{template_name}"):
                 template_to_use = template_name
 
-        def make_view(content, title, template):
+        def make_view(content, title, template, description, route_path):
             def view():
                 return render_template(
                     template,
                     content=content,
                     title=title,
+                    description=description,
+                    route_path=route_path,
                     nav=endpoints,
                 )
 
             return view
 
         app.view_functions[endpoint_name] = make_view(
-            endpoint["html_content"], endpoint["title"], template_to_use
+            endpoint["html_content"],
+            endpoint["title"],
+            template_to_use,
+            endpoint["description"],
+            endpoint["route_path"],
         )
         if build:
             Path(f"build{endpoint['route_path']}").mkdir(parents=True, exist_ok=True)
@@ -122,6 +137,10 @@ def create_pages(app, endpoints, build=False):
                 with app.app_context(), app.test_request_context():
                     f.write(
                         make_view(
-                            endpoint["html_content"], endpoint["title"], template_to_use
+                            endpoint["html_content"],
+                            endpoint["title"],
+                            template_to_use,
+                            endpoint["description"],
+                            endpoint["route_path"],
                         )()
                     )

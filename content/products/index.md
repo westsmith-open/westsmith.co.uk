@@ -1,3 +1,5 @@
+description: Westsmith builds focused tools for monday.com and Slack teams. Browse our products including Word Import for monday.com and Make a Chart for Slack.
+
 # Our Products
 
 We build focused, practical tools for modern teams, especially those using **monday.com** and **Slack** as their operational hubs.
