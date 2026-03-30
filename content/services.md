@@ -28,11 +28,9 @@ We specialise in:
 
 ## Portfolio
 
-Want to see the sort of work we’ve delivered before?
+Want to see the sort of work we’ve delivered?
 
-👉 Visit [danielball.com/portfolio](https://danielball.com/portfolio) for examples, from open-source tools to production-grade client projects.
-
-And don't forget to check out our open-source work on [GitHub](https://github.com/westsmith-open) ☕
+👉 Browse our [portfolio](/portfolio) — products we ship, client projects and open-source work.
 
 ---
 

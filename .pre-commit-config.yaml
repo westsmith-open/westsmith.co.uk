@@ -28,7 +28,7 @@ repos:
       - id: check-json
       - id: check-merge-conflict
       - id: check-added-large-files
-        args: [--maxkb=500]
+        args: [--maxkb=600]
       - id: check-case-conflict        # catches case-insensitive filesystem issues
       - id: check-symlinks
       - id: detect-private-key         # catches accidentally committed keys

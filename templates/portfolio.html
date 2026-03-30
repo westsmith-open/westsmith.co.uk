@@ -1,0 +1,301 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 700px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .portfolio-card {
+    border: 1px solid #d8e8f4;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    display: block;
+    background-color: #f0f5fa;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d8e8f4;
+  }
+
+  .portfolio-card-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #e8f4fb 0%, #d0e8f5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9bbdd6;
+    font-size: 0.85rem;
+  }
+
+  .portfolio-card-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-card-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #888;
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+
+  .portfolio-card-body h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+  }
+
+  .portfolio-card-body h2 a {
+    color: #164e87;
+    text-decoration: none;
+  }
+
+  .portfolio-card-body h2 a:hover {
+    text-decoration: underline;
+  }
+
+  .portfolio-card-body p {
+    margin: 0 0 0.75rem;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tag {
+    background: #e8f4fb;
+    color: #164e87;
+    border-radius: 4px;
+    padding: 0.2rem 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+
+  .tag-ai {
+    background: #f0e8fb;
+    color: #5c1a87;
+  }
+
+  .portfolio-card-logo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #f0f5fa;
+    border-bottom: 1px solid #d8e8f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-card-logo img {
+    width: auto;
+    height: 80px;
+    aspect-ratio: unset;
+    object-fit: unset;
+    background: none;
+    border-bottom: none;
+    padding: 0;
+  }
+</style>
+
+<h1>Portfolio</h1>
+<p>A selection of products, client projects and open-source work.</p>
+
+<div class="portfolio-grid">
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/verdanta.png') }}" alt="Verdanta">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Product</span>
+      <h2><a href="https://verdanta.report" target="_blank" rel="noopener">Verdanta</a></h2>
+      <p>Professional ESG reports for UK small businesses. Answer a short questionnaire and receive a formatted PDF to share with clients, investors or tender committees. Powered by Anthropic's Claude. No account needed.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Flask</li>
+        <li class="tag">Google Cloud</li>
+        <li class="tag tag-ai">Anthropic Claude</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/chartula.png') }}" alt="Chartula">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Document Processing</span>
+      <h2><a href="https://chartula.app" target="_blank" rel="noopener">Chartula</a></h2>
+      <p>A GDPR-compliant platform that automates redaction of personal data from vehicle documents. Upload photos or files, names and addresses are redacted automatically, then share via link or QR code. Python document processing pipeline on Google Cloud.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Google Cloud</li>
+        <li class="tag tag-ai">AI</li>
+        <li class="tag">Document processing</li>
+        <li class="tag">GDPR</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/doc-retrieval.png') }}" alt="Document Retrieval System">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Document Management</span>
+      <h2>Document Retrieval System</h2>
+      <p>A document search and retrieval system for a local client, replacing a manual process of locating files across shared drives. Staff can now find the right document in seconds using natural language queries, built on a vector database with semantic search.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag tag-ai">LLM</li>
+        <li class="tag">RAG</li>
+        <li class="tag">Vector database</li>
+        <li class="tag">Google Cloud</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/babylon.png') }}" alt="Babylon Healthcare Symptom Checker">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Healthcare</span>
+      <h2>Babylon Healthcare — Symptom Checker</h2>
+      <p>Backend development on a safety-critical symptom checker. Python Flask microservices acting as the translation layer between a Scala symptom engine and the Node.js frontend, with CI/CD improvements across multiple pipeline tools.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Flask</li>
+        <li class="tag">Scala</li>
+        <li class="tag">Node.js</li>
+        <li class="tag">CircleCI</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/vodafone.png') }}" alt="Vodafone test framework">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">E-commerce / Telecoms</span>
+      <h2>Vodafone.co.uk — Test Framework</h2>
+      <p>Led development of automated performance testing infrastructure for Vodafone's e-commerce platform. Locust and Wiremock on AWS, with Azure DevOps pipelines and Datadog analytics informing test targeting.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Locust</li>
+        <li class="tag">AWS</li>
+        <li class="tag">Datadog</li>
+        <li class="tag">Azure DevOps</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/illuminate.jpg') }}" alt="Illuminate Command Center">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Slack Integration</span>
+      <h2>Illuminate Command Center</h2>
+      <p>A full Slack application replicating the capabilities of an existing web platform, built from scratch with Python and Flask on Google Cloud. Integrated with an existing Auth0-authenticated REST API throughout.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Flask</li>
+        <li class="tag">Google Cloud Run</li>
+        <li class="tag">Slack SDK (Bolt)</li>
+        <li class="tag">Auth0</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/word-import.png') }}" alt="Word Import for monday.com">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Product</span>
+      <h2><a href="/products/word-import-for-monday">Word Import for monday.com</a></h2>
+      <p>A monday.com app that converts Word documents into monday docs, preserving rich text, tables and hyperlinks. Built on the monday.com Apps Framework and listed in the official marketplace.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">monday.com API</li>
+        <li class="tag">Google Cloud</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <img src="{{ url_for('static', filename='images/portfolio/makeachart.png') }}" alt="Make a Chart for Slack">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Product</span>
+      <h2><a href="https://makeachart.app/" target="_blank" rel="noopener">Make a Chart for Slack</a></h2>
+      <p>A Slack app that turns pasted data into charts, right where your team is talking. Paste numbers into a slash command and get a chart back in seconds. Built with Python and the Slack Bolt SDK.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Slack Bolt SDK</li>
+        <li class="tag">Google Cloud</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Legacy Modernisation</span>
+      <h2>Strategy Research Organiser</h2>
+      <p>Modernised legacy business software that had become unmaintainable. The original was a Java desktop app with no source code — the developer had left five years prior. Delivered with source control, CI/CD and automated regression tests via GitHub Actions.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Java</li>
+        <li class="tag">GitHub Actions</li>
+        <li class="tag">CI/CD</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <div class="portfolio-card-logo">
+      <img src="{{ url_for('static', filename='svg/westsmith.svg') }}" alt="Westsmith logo">
+    </div>
+    <div class="portfolio-card-body">
+      <span class="portfolio-card-label">Open Source</span>
+      <h2><a href="https://github.com/westsmith-open/westsmith.co.uk" target="_blank" rel="noopener">This website</a></h2>
+      <p>The westsmith.co.uk site itself is open source. Python and Flask as a static site generator with Jinja2 templates, deployed automatically to GitHub Pages via GitHub Actions.</p>
+      <ul class="tag-list">
+        <li class="tag">Python</li>
+        <li class="tag">Flask</li>
+        <li class="tag">Simple.CSS</li>
+        <li class="tag">GitHub Pages</li>
+        <li class="tag">GitHub Actions</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+<div class="cta-section">
+  <p>Interested in working together?</p>
+  <a href="/contact-us" class="button">Get in touch</a>
+</div>
+
+{% endblock %}
