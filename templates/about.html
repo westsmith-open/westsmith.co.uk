@@ -7,13 +7,14 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 2.5rem;
-    align-items: start;
+    align-items: center;
     margin-bottom: 2rem;
   }
 
   .about-alfred {
     width: 180px;
     border-radius: 8px;
+    display: block;
   }
 
   @media (max-width: 600px) {
@@ -45,7 +46,7 @@
   }
 </style>
 
-<h1>About</h1>
+{{ content|safe }}
 
 <div class="about-intro">
   <img
@@ -61,10 +62,9 @@
     loading="lazy"
   />
   <div>
-    <p>Westsmith is a software consultancy based in Winchester, UK. We build custom software, integrate AI and design cloud systems for businesses that need reliable, well-crafted solutions delivered without the overhead of a large agency.</p>
+    <p>Westsmith is a software consultancy based in Winchester, UK. We build custom software, integrate AI and design cloud systems for businesses that need reliable, well-crafted solutions without the overhead of a large agency.</p>
     <p>Founded in 2019 by <a href="https://danielball.com">Daniel Ball</a>, the company was initially set up to deliver contract work for IBM. Since then we've worked with government departments, healthcare providers and large enterprises including the Office for National Statistics and Vodafone.</p>
     <p>We work with clients across the UK on a project or retainer basis. Whether that's a greenfield build, modernising something legacy or embedding AI into an existing product, the approach is the same. Close collaboration, clear communication and a focus on shipping something that works.</p>
-    <p>AI integration is an active and growing part of our work, with hands-on production experience applying Anthropic's Claude in real products.</p>
   </div>
 </div>
 
@@ -73,9 +73,9 @@
 <h2>Core skills</h2>
 
 <ul class="about-skills">
-  <li><strong>Backend development</strong> using Python and modern API frameworks like FastAPI, Flask and Django</li>
+  <li><strong>Backend development</strong> using Python and modern API frameworks like FastAPI and Django</li>
   <li><strong>Cloud infrastructure</strong> on GCP and AWS, including serverless architecture, container orchestration and infrastructure as code</li>
-  <li><strong>AI integration</strong> using Anthropic's Claude, from RAG systems and document processing to LLM-powered report generation</li>
+  <li><strong>AI integration</strong> using Anthropic's models, from RAG systems and document processing to LLM-powered report generation</li>
   <li><strong>Full-stack delivery</strong> from prototypes to production, with a strong grasp of front-end templating, CI/CD and testing pipelines</li>
 </ul>
 

@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .ai-intro {
+    max-width: 720px;
+    margin-bottom: 2rem;
+  }
+
+  .ai-use-cases {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .ai-use-cases {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ai-use-case {
+    border: 1px solid #d8e8f4;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    background: #fff;
+  }
+
+  .ai-use-case h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #164e87;
+  }
+
+  .ai-use-case p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .ai-process {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    counter-reset: process-counter;
+  }
+
+  .ai-process li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eef3f8;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    counter-increment: process-counter;
+  }
+
+  .ai-process li:last-child {
+    border-bottom: none;
+  }
+
+  .ai-process li::before {
+    content: counter(process-counter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.75rem;
+    height: 1.75rem;
+    background: #164e87;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .ai-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .ai-articles {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ai-article-link {
+    display: block;
+    border: 1px solid #d8e8f4;
+    border-radius: 8px;
+    padding: 0.875rem 1.25rem;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ai-article-link:hover {
+    border-color: #164e87;
+    background: #f0f7ff;
+  }
+
+  .ai-article-link strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #164e87;
+    margin-bottom: 0.2rem;
+  }
+
+  .ai-article-link span {
+    font-size: 0.875rem;
+    color: #666;
+  }
+</style>
+
+<h1>AI with Anthropic's models</h1>
+
+<div class="ai-intro">
+  <p>We build software that puts Anthropic's models to practical use. That means applications that automate knowledge work, process documents at scale, answer questions from large corpora and generate outputs that previously required a human expert.</p>
+  <p>The work is hands-on throughout. We scope, design and build. No subcontracting, no hand-off to a junior team.</p>
+</div>
+
+<hr>
+
+<h2>What we build</h2>
+
+<p>These are the types of AI projects we take on.</p>
+
+<div class="ai-use-cases">
+  <div class="ai-use-case">
+    <h3>RAG systems</h3>
+    <p>Retrieval-augmented generation over internal documents, wikis or databases. Ask questions in plain English and get accurate, sourced answers.</p>
+  </div>
+  <div class="ai-use-case">
+    <h3>Document processing</h3>
+    <p>Extract, classify and structure information from unstructured documents at scale. Forms, reports, contracts, correspondence.</p>
+  </div>
+  <div class="ai-use-case">
+    <h3>Report generation</h3>
+    <p>LLM-powered pipelines that take structured data or analysis and produce readable, well-formatted outputs.</p>
+  </div>
+  <div class="ai-use-case">
+    <h3>AI agents</h3>
+    <p>Systems that reason through multi-step tasks using tools and APIs. Useful for automating research, data gathering and decision support workflows.</p>
+  </div>
+  <div class="ai-use-case">
+    <h3>Natural language interfaces</h3>
+    <p>Add conversational interfaces to existing products. Query databases, trigger workflows or get guidance without learning a new system.</p>
+  </div>
+  <div class="ai-use-case">
+    <h3>Evaluation and integration</h3>
+    <p>Embedding AI capabilities into an existing product, including prompt engineering, model selection, testing and monitoring in production.</p>
+  </div>
+</div>
+
+<hr>
+
+<h2>How we work</h2>
+
+<ol class="ai-process">
+  <li><div><strong>Discovery.</strong> We start by understanding what you're trying to automate or improve. We'll challenge assumptions, identify what AI can and can't do reliably, and propose an approach that fits your constraints.</div></li>
+  <li><div><strong>Prototype.</strong> Before committing to a full build, we prototype the core AI interaction. This is where you find out what prompt strategies work, what the failure modes are and what accuracy looks like in practice.</div></li>
+  <li><div><strong>Build.</strong> We build production-grade software around the AI. That means proper error handling, logging, testing and infrastructure. Not a demo. Something you can rely on.</div></li>
+  <li><div><strong>Iterate.</strong> AI products improve with use. We stay engaged to refine outputs, tune prompts and evolve the system as your needs change.</div></li>
+</ol>
+
+<hr>
+
+<h2>Background reading</h2>
+
+<p>If you want a sense of how we think about AI before getting in touch, these articles are a good starting point.</p>
+
+<div class="ai-articles">
+  <a href="/articles/ai-agents" class="ai-article-link">
+    <strong>What are AI agents?</strong>
+    <span>A practical explanation of agentic systems and when to use them.</span>
+  </a>
+  <a href="/articles/ai-assisted-coding" class="ai-article-link">
+    <strong>AI-assisted coding</strong>
+    <span>How we use AI in our own development workflow.</span>
+  </a>
+  <a href="/articles/ai-glossary" class="ai-article-link">
+    <strong>AI glossary</strong>
+    <span>Plain-English definitions of the terms that matter: LLMs, RAG, embeddings, temperature and more.</span>
+  </a>
+  <a href="/articles/machine-learning-models" class="ai-article-link">
+    <strong>Machine learning models</strong>
+    <span>A guide to the model landscape and how to pick the right one for the job.</span>
+  </a>
+</div>
+
+<hr>
+
+<div class="cta-section" style="margin-top:2rem;">
+  <p>If you've got an AI project in mind and want to talk through what's feasible, get in touch.</p>
+  <a href="/contact-us" class="button">Start a conversation</a>
+</div>
+
+{% endblock %}
