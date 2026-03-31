@@ -1,1 +1,1 @@
-description: Westsmith builds custom software for businesses in Winchester, UK. We create internal tools, automated workflows and integrations that fit how you work.
+description: Westsmith builds custom software and AI-powered tools for businesses. Python, Google Cloud and Anthropic Claude specialists based in Winchester, UK.

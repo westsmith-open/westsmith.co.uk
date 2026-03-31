@@ -1,42 +1,89 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>About Us</h1>
-  <div class="flex-container">
-    <div>
-      <img
-        src="/static/images/alfred-900w.jpg"
-        srcset="
-          /static/images/alfred-300w.jpg 300w,
-          /static/images/alfred-600w.jpg 600w,
-          /static/images/alfred-900w.jpg 900w
-        "
-        sizes="(max-width: 768px) 100vw, 250px"
-        alt="Alfred"
-        loading="lazy"
-      />
-    </div>
-    <div>
-      <p>
-        Based in King Alfred's Winchester, England, we have years of experience
-        developing applications and solutions for organisations large and small.
-      </p>
-      <p>
-        At <b>Westsmith</b>, we deliver high-quality software solutions for
-        organisations that value reliability, speed, and clarity. We’ve helped
-        government departments, startups, and enterprise clients solve complex
-        problems and ship production-ready systems.
-      </p>
-      <p>
-        Founded in 2019 by
-        <a href="http://danielball.com">Daniel Ball</a>, the company was
-        initially created to deliver contract work for IBM. In the following
-        years we have delivered multiple contracts and freelance work for many
-        different goverment clients and large organisations, such as the Office
-        for National Statistics and Vodafone.
-      </p>
-    </div>
-  </div>
 
-  {{ content|safe }}
+<style>
+  .about-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .about-alfred {
+    width: 180px;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .about-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .about-alfred {
+      display: none;
+    }
+  }
+
+  .about-skills {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+  }
+
+  .about-skills li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eef3f8;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  .about-skills li:last-child {
+    border-bottom: none;
+  }
+</style>
+
+<h1>About</h1>
+
+<div class="about-intro">
+  <img
+    src="/static/images/alfred-900w.jpg"
+    srcset="
+      /static/images/alfred-300w.jpg 300w,
+      /static/images/alfred-600w.jpg 600w,
+      /static/images/alfred-900w.jpg 900w
+    "
+    sizes="180px"
+    alt="King Alfred statue, Winchester"
+    class="about-alfred"
+    loading="lazy"
+  />
+  <div>
+    <p>Westsmith is a software consultancy based in Winchester, UK. We build custom software, integrate AI and design cloud systems for businesses that need reliable, well-crafted solutions delivered without the overhead of a large agency.</p>
+    <p>Founded in 2019 by <a href="https://danielball.com">Daniel Ball</a>, the company was initially set up to deliver contract work for IBM. Since then we've worked with government departments, healthcare providers and large enterprises including the Office for National Statistics and Vodafone.</p>
+    <p>We work with clients across the UK on a project or retainer basis. Whether that's a greenfield build, modernising something legacy or embedding AI into an existing product, the approach is the same. Close collaboration, clear communication and a focus on shipping something that works.</p>
+    <p>AI integration is an active and growing part of our work, with hands-on production experience applying Anthropic's Claude in real products.</p>
+  </div>
+</div>
+
+<hr>
+
+<h2>Core skills</h2>
+
+<ul class="about-skills">
+  <li><strong>Backend development</strong> using Python and modern API frameworks like FastAPI, Flask and Django</li>
+  <li><strong>Cloud infrastructure</strong> on GCP and AWS, including serverless architecture, container orchestration and infrastructure as code</li>
+  <li><strong>AI integration</strong> using Anthropic's Claude, from RAG systems and document processing to LLM-powered report generation</li>
+  <li><strong>Full-stack delivery</strong> from prototypes to production, with a strong grasp of front-end templating, CI/CD and testing pipelines</li>
+</ul>
+
+<hr>
+
+<div class="cta-section" style="margin-top:2rem;">
+  <p>If you're looking for a software partner who combines technical depth with delivery focus, get in touch.</p>
+  <a href="/contact-us" class="button">Let's talk</a>
+</div>
+
 {% endblock %}
