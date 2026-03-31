@@ -1,20 +1,89 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<style>
+  .specialism-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .specialism-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .specialism-card {
+    border: 1px solid #d8e8f4;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    background: #fff;
+  }
+
+  .specialism-card h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #164e87;
+  }
+
+  .specialism-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .portfolio-callout {
+    background: #f0f7ff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .portfolio-callout h2 {
+    margin-top: 0;
+  }
+
+  .portfolio-callout p {
+    color: #444;
+    max-width: 680px;
+  }
+
+  .portfolio-callout .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #164e87;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .portfolio-callout .button:hover {
+    background-color: #1260a8;
+  }
+</style>
+
   <p class="lead-in">
-    Need software that actually makes life easier? That’s what we build.
+    Need software that actually makes life easier? That's what we build.
   </p>
+
   <div class="section">
     <h1>Software that fits your business</h1>
     <div class="content-wrapper">
       <div class="text-content">
         <p>
-          We help firms work smarter with custom-built software. If you’re
+          We help firms work smarter with custom-built software. If you're
           struggling with spreadsheets, outdated systems or disconnected tools,
           we can help make your processes simpler, faster and more reliable.
         </p>
         <p>
-          Whether it’s a secure dashboard, a tailored workflow, or automating
+          Whether it's a secure dashboard, a tailored workflow, or automating
           the boring stuff, we build software that fits your business and how you already work.
         </p>
       </div>
@@ -39,35 +108,45 @@
   <hr />
 
   <div class="section">
-    <h2><a href="/services">What We Do</a></h2>
-    <div class="content-wrapper">
-      <div class="image-content">
-        <img
-          src="/static/images/index2-900w.jpg"
-          srcset="
-            /static/images/index2-300w.jpg 300w,
-            /static/images/index2-600w.jpg 600w,
-            /static/images/index2-900w.jpg 900w
-          "
-          sizes="(max-width: 768px) 100vw, 50vw"
-          alt="Our Services"
-          class="section-image"
-          loading="lazy"
-        />
+    <h2>What We Do</h2>
+    <p>We design, build and support software tailored to your business. Here's where we specialise.</p>
+    <div class="specialism-grid">
+      <div class="specialism-card">
+        <h3>Custom Software Development</h3>
+        <p>Bespoke applications and internal tools designed around how your business actually works.</p>
       </div>
-      <div class="text-content">
-        <p>
-          We design, build and support software tailored to your business. Our
-          goal is to remove frustration, cut down wasted time and create tools
-          that work for real people, not just developers.
-        </p>
-        <ul>
-          <li>Custom internal tools and web dashboards</li>
-          <li>Automated workflows and data handling</li>
-          <li>Connecting services like Slack or monday.com</li>
-          <li>Cloud-based systems that grow with your business</li>
-        </ul>
+      <div class="specialism-card">
+        <h3>AI Integration</h3>
+        <p>Practical AI built into your products and workflows — from document generation to natural language interfaces, using Anthropic's Claude and other leading models.</p>
       </div>
+      <div class="specialism-card">
+        <h3>Python &amp; Google Cloud</h3>
+        <p>Robust backend systems, APIs and data pipelines. Certified Google Cloud Professional Cloud Developer.</p>
+      </div>
+      <div class="specialism-card">
+        <h3>Workflow Automation</h3>
+        <p>Automating the repetitive so your team can focus on work that matters. From simple scripts to full pipeline orchestration.</p>
+      </div>
+      <div class="specialism-card">
+        <h3>Slack Integrations</h3>
+        <p>Custom bots, apps and workflows that bring business logic directly into your team's chat.</p>
+      </div>
+      <div class="specialism-card">
+        <h3>monday.com Apps</h3>
+        <p>Official marketplace apps and custom automations that extend what monday.com can do for your team.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="section">
+    <div class="portfolio-callout">
+      <h2>See the work</h2>
+      <p>
+        We've worked across a broad range of projects: AI-powered tools, document processing platforms, enterprise integrations, performance testing infrastructure and legacy modernisation. Take a look at what we've built.
+      </p>
+      <a href="/portfolio" class="button">Browse the portfolio</a>
     </div>
   </div>
 
@@ -78,13 +157,13 @@
     <div class="content-wrapper">
       <div class="text-content">
         <p>
-          We’ve delivered software for the UK government, universities,
-          healthcare providers and small businesses alike. But we’re not a big
-          faceless agency. We’re hands-on, responsive and focused on what
+          We've delivered software for the UK government, universities,
+          healthcare providers and small businesses alike. But we're not a big
+          faceless agency. We're hands-on, responsive and focused on what
           actually works.
         </p>
         <p>
-          You’ll get direct contact with an experienced developer and clear,
+          You'll get direct contact with an experienced developer and clear,
           jargon-free communication from start to finish.
         </p>
       </div>
@@ -109,9 +188,9 @@
 
   <div class="section testimonial">
     <blockquote>
-      “Worked quickly and turned around additional requests and changes quickly
+      "Worked quickly and turned around additional requests and changes quickly
       and thoroughly. Overall a fantastic experience and would recommend him
-      without reservations.”
+      without reservations."
     </blockquote>
     <cite>— President, Center for Strategy Research</cite>
   </div>
@@ -119,13 +198,14 @@
   <hr />
 
   <div class="section cta-section">
-    <h2>Let’s talk</h2>
+    <h2>Let's talk</h2>
     <p>
-      Whether you’ve got a project in mind or just want to explore how custom
-      software could help your business, we’re happy to chat.
+      Whether you've got a project in mind or just want to explore how custom
+      software could help your business, we're happy to chat.
     </p>
     <p>
       <a href="/contact-us" class="button">Get in touch</a>
     </p>
   </div>
+
 {% endblock %}
