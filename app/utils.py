@@ -78,6 +78,7 @@ def create_endpoints(app: Flask, md_dir: str):
                 route_parts[-1].replace("-", " ").title() if route_parts else "Home"
             )
             description = meta.get("description")
+            author = meta.get("author")
 
             print(f"Adding {endpoint_name} ({route_path})")
             app.add_url_rule(
@@ -92,6 +93,7 @@ def create_endpoints(app: Flask, md_dir: str):
                     "route_path": route_path,
                     "html_content": html_content,
                     "description": description,
+                    "author": author,
                 }
     return endpoints
 
@@ -109,7 +111,7 @@ def create_pages(app, endpoints, build=False):
             if os.path.exists(f"templates/{template_name}"):
                 template_to_use = template_name
 
-        def make_view(content, title, template, description, route_path):
+        def make_view(content, title, template, description, route_path, author):
             def view():
                 return render_template(
                     template,
@@ -118,6 +120,7 @@ def create_pages(app, endpoints, build=False):
                     description=description,
                     route_path=route_path,
                     nav=endpoints,
+                    author=author,
                 )
 
             return view
@@ -128,6 +131,7 @@ def create_pages(app, endpoints, build=False):
             template_to_use,
             endpoint["description"],
             endpoint["route_path"],
+            endpoint["author"],
         )
         if build:
             Path(f"build{endpoint['route_path']}").mkdir(parents=True, exist_ok=True)
@@ -140,5 +144,6 @@ def create_pages(app, endpoints, build=False):
                             template_to_use,
                             endpoint["description"],
                             endpoint["route_path"],
+                            endpoint["author"],
                         )()
                     )
