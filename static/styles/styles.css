@@ -1,3 +1,27 @@
+/* Force light mode until dark mode is properly supported */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --accent-bg: #f5f7ff;
+    --text: #212121;
+    --text-light: #585858;
+    --border: #898ea4;
+    --accent: #0d47a1;
+    --accent-hover: #1266e2;
+    --accent-text: var(--bg);
+    --code: #d81b60;
+    --preformatted: #444;
+    --marked: #fd3;
+    --disabled: #efefef;
+  }
+
+  img,
+  video {
+    opacity: 1 !important;
+  }
+}
+
 /* Widen the centre column for bigger screens */
 @media (min-width: 1046px) {
   body {
