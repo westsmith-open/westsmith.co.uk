@@ -4,8 +4,6 @@ author: Daniel Ball, founder of Westsmith
 
 # Machine Learning Models
 
-<img src="/static/images/articles/models.png" alt="Machine learning models overview">
-
 ## Introduction
 
 In this article, we will demystify the term **model** and explore the evolving landscape of machine learning tools. We will also cover the difference between classical models and modern LLMs and show you the tradeoffs between running models locally, in the cloud or via an API.
