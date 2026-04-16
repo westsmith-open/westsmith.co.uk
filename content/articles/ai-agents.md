@@ -53,13 +53,13 @@ List of agent systems that can be configured with Python (other language interfa
 
 | System name | Official docs | Code samples |
 | --- | --- | --- |
-| [Phidata](https://www.phidata.com/) | [Phidata introduction](https://docs.phidata.com/introduction) | [Phidata samples](https://github.com/phidatahq/phidata/tree/main/cookbook/examples/agents) |
+| [Phidata](https://www.phidata.com/) | [Phidata introduction](https://docs.phidata.com/introduction) | [Phidata cookbook](https://github.com/agno-agi/agno/tree/main/cookbook) |
 | [OpenAI Swarm](https://github.com/openai/swarm) | [OpenAI Swarm docs](https://github.com/openai/swarm?tab=readme-ov-file#documentation) | [OpenAI Swarm samples](https://github.com/openai/swarm/tree/main/examples) |
 | [LangGraph](https://langchain-ai.github.io/langgraph/) | [LangGraph docs](https://langchain-ai.github.io/langgraph/tutorials/introduction/) | [LangGraph samples](https://github.com/langchain-ai/langgraph/tree/main/examples) |
 | [Microsoft Autogen](https://microsoft.github.io/autogen/0.2/) | [Autogen docs](https://microsoft.github.io/autogen/stable/) | [Autogen samples](https://github.com/microsoft/autogen/tree/main/python/samples) |
 | [CrewAI](https://www.crewai.com/) | [CrewAI docs](https://docs.crewai.com/introduction) | [CrewAI Code samples](https://github.com/crewAIInc/crewAI-examples) |
 | [Vertex AI](https://cloud.google.com/vertex-ai?hl=en) | [Vertex AI Code docs](https://cloud.google.com/vertex-ai/docs) | [Vertex AI Code samples](https://github.com/GoogleCloudPlatform/vertex-ai-samples) |
-| [Langflow](https://www.langflow.org/) | [Langflow docs](https://docs.langflow.org) | [Langflow samples](https://github.com/langflow-ai/langflow_examples) |
+| [Langflow](https://www.langflow.org/) | [Langflow docs](https://docs.langflow.org) | [Langflow repo](https://github.com/langflow-ai/langflow) |
 
 ## No Code agent systems
 

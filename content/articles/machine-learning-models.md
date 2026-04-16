@@ -1,4 +1,4 @@
-description: A practical guide to machine learning models — from classical techniques to LLMs. What each model type does, when to use it, and why reaching for an LLM every time is often the wrong call.
+description: A practical guide to machine learning models. Covers classical techniques through to LLMs, when to use each and why reaching for an LLM every time is often the wrong call.
 title: Machine Learning Models: A Practical Guide | Westsmith
 author: Daniel Ball, founder of Westsmith
 
@@ -12,7 +12,7 @@ In this article, we will demystify the term **model** and explore the evolving l
 
 Picking the right ML tool for the job is where we want to get to at the end, instead of plugging everything into a ChatGPT terminal. If you're a software developer, system architect or tech-curious builder wondering how to integrate ML wisely, this is for you.
 
-There is also a heavy focus on examples in **Python**. If you don't know Python, do still read on — hopefully you'll get inspired to learn it as well as discovering the underpinnings of modern AI.
+There is also a heavy focus on examples in **Python**. If you don't know Python, do still read on. Hopefully you'll get inspired to learn it as well as discovering the underpinnings of modern AI.
 
 ### Resources / TLDR
 
@@ -42,7 +42,7 @@ In Machine Learning, a **model** refers to a mathematical construct trained to m
 
 GPT, Gemini and Claude are examples of **Large Language Models** and are perhaps the most well-known type of ML model by the general public. However, these are very extreme examples and represent the high end in a spectrum of model complexity.
 
-Before AI became known for chatbots and image generators, professionals who dealt with data (such as data scientists) used — and still do use — a variety of machine learning models to make predictions, detect patterns or sort information. These models were usually small, focused and trained on structured data like spreadsheets or databases.
+Before AI became known for chatbots and image generators, professionals who dealt with data (such as data scientists) used, and still do use, a variety of machine learning models to make predictions, detect patterns or sort information. These models were usually small, focused and trained on structured data like spreadsheets or databases.
 
 ## Types of ML Models
 
@@ -157,55 +157,79 @@ Deep learning refers to neural networks with many layers. These additional layer
 
 ### If your data is structured (tables, numbers, categories):
 
-**Use classical ML models** like Logistic Regression, Decision Trees / Random Forests, or XGBoost / LightGBM.
+**Use classical ML models** like Logistic Regression, Decision Trees / Random Forests or XGBoost / LightGBM.
 
-**Examples:**
 - Predicting churn from customer data
 - Scoring leads in a CRM
 - Classifying transactions as fraud or not
 
-✅ Fast — ✅ Explainable — ✅ Can run locally — ❌ Not great for messy or unstructured input
+| Pros | Cons |
+| --- | --- |
+| ✅ Fast | ❌ Not great for messy or unstructured input |
+| ✅ Explainable | |
+| ✅ Can run locally | |
 
-> If the data fits in a spreadsheet, you probably don't need a neural net.
+---
 
 ### If your input is text and the output is a simple label:
 
 **Use smaller NLP models** (not full LLMs) like RoBERTa, DistilBERT or fastText.
 
-**Examples:**
 - Categorising support tickets
 - Sentiment analysis
 - Spam detection
 
-✅ Lightweight and fast — ✅ More accurate than old-school methods — ❌ Doesn't generate language, just classifies
+| Pros | Cons |
+| --- | --- |
+| ✅ Lightweight and fast | ❌ Doesn't generate language, just classifies |
+| ✅ More accurate than rule-based approaches | |
 
-> You don't need ChatGPT to decide if a tweet is angry or not.
+---
 
 ### If you're working with images or video:
 
-**Use vision models** like ResNet / MobileNet / EfficientNet (classification), YOLO / Detectron2 (object detection), or CLIP / BLIP (image + text tasks).
+**Use vision models** like ResNet / MobileNet / EfficientNet (classification), YOLO / Detectron2 (object detection) or CLIP / BLIP (image + text tasks).
 
-✅ Purpose-built and efficient — ✅ Can run on phones or edge devices — ❌ Needs labelled image data to train
+- Classifying product images
+- Detecting objects in video feeds
+- Matching images to text descriptions
+
+| Pros | Cons |
+| --- | --- |
+| ✅ Purpose-built and efficient | ❌ Needs labelled image data to train |
+| ✅ Can run on phones or edge devices | |
+
+---
 
 ### If your input is audio or speech:
 
-**Use audio models** like Whisper (speech-to-text), wav2vec2 (speech recognition), or TTS models.
+**Use audio models** like Whisper (speech-to-text), wav2vec2 (speech recognition) or TTS models.
 
-✅ Highly accurate models available open-source — ✅ Works well offline — ❌ Audio data can be large and tricky to process
+- Transcribing calls or meetings
+- Building voice-controlled interfaces
+- Generating spoken output from text
+
+| Pros | Cons |
+| --- | --- |
+| ✅ Good open-source options available | ❌ Audio data can be large and tricky to process |
+| ✅ Works well offline | |
+
+---
 
 ### If you need language generation, summarisation or reasoning:
 
-**Now you're in LLM territory**: GPT-4 / Claude / Gemini via commercial APIs, or LLaMA / Mistral / Phi as open-source options.
+**Use large language models** like GPT / Claude / Gemini via commercial APIs or LLaMA / Mistral / Phi as open-source options.
 
-**Examples:**
 - Summarising a legal document
 - Explaining code
 - Writing email drafts or documentation
 - Chatbots with memory and logic
 
-✅ Extremely powerful — ✅ Very general-purpose — ❌ Can be expensive — ❌ May hallucinate — ❌ Overkill for small classification tasks
-
-> Use LLMs for jobs that involve language reasoning.
+| Pros | Cons |
+| --- | --- |
+| ✅ Extremely powerful | ❌ Can be expensive |
+| ✅ Very general-purpose | ❌ May hallucinate |
+| | ❌ Overkill for small classification tasks |
 
 ### Decision Table
 
@@ -218,17 +242,11 @@ Deep learning refers to neural networks with many layers. These additional layer
 | Transcribe speech | ASR | Whisper |
 | Group similar users | K-means Clustering | Scikit-learn |
 | Detect sentiment in reviews | NLP | RoBERTa |
-| Write SEO blog posts | LLM | GPT-4, Claude |
+| Write SEO blog posts | LLM | GPT, Claude |
 
-### Final Advice: Use the Smallest Model That Works
+## Why LLMs Aren't Always the Answer
 
-You wouldn't call a rocket scientist to fix a leaky tap — and you shouldn't call an LLM when a few `if` statements would do.
-
-But sometimes LLMs are the right call. If the task involves nuance, ambiguity or creativity, or if you need a prototype right now and tokens are cheap, go ahead. Just know there's a whole toolbox behind it and sometimes a hammer really is better than a sledgehammer.
-
-## The LLM-ification of Everything (and why it's a Problem)
-
-Large Language Models are incredibly capable — they can summarise, classify, generate, reason and write code. Given that power, it's no surprise that many developers now reach for LLMs as the default tool for every ML problem.
+Large Language Models are incredibly capable. They can summarise, classify, generate, reason and write code. Given that power, it's no surprise that many developers now reach for LLMs as the default tool for every ML problem.
 
 But just because you _can_ use an LLM doesn't mean you _should_.
 
@@ -240,21 +258,18 @@ But just because you _can_ use an LLM doesn't mean you _should_.
 
 ### The Problems with Treating LLMs as a Catch-All
 
-**Wasteful overhead** — You're using a billion-parameter model to do what a 5MB model could have done. Classifying tweets as positive or negative? A fine-tuned BERT could do it faster and cheaper.
-
-**Scaling costs** — An LLM call might cost fractions of a cent, but multiply that by millions of users and you're bleeding money. Traditional models are nearly free to run once deployed.
-
-**Latency** — Even the fastest LLMs are slower than traditional models. A call to a hosted LLM takes 200ms–1s+. A local scikit-learn model returns results in milliseconds.
-
-**Loss of specialisation** — LLMs are generalists. A fine-tuned fraud detection model trained on your data will almost always beat an LLM trying to "reason" its way to a result.
-
-**Skills atrophy** — When LLMs become a catch-all, developers stop learning about classical ML, statistics and feature engineering. That's dangerous in regulated, high-stakes or performance-sensitive environments.
+- **Wasteful overhead** — You're using a billion-parameter model to do what a 5MB model could have done. Classifying tweets as positive or negative? A fine-tuned BERT could do it faster and cheaper.
+- **Scaling costs** — An LLM call might cost fractions of a cent, but multiply that by millions of users and you're bleeding money. Traditional models are nearly free to run once deployed.
+- **Latency** — Even the fastest LLMs are slower than traditional models. A call to a hosted LLM takes 200ms–1s+. A local scikit-learn model returns results in milliseconds.
+- **Loss of specialisation** — LLMs are generalists. A fine-tuned fraud detection model trained on your data will almost always beat an LLM trying to "reason" its way to a result.
+- **Skills atrophy** — When LLMs become a catch-all, developers stop learning about classical ML, statistics and feature engineering. That's dangerous in regulated, high-stakes or performance-sensitive environments.
 
 ### A Better Approach: Use LLMs for What They're Great At
 
 Use LLMs for language understanding, generation and reasoning. Use traditional models when you want speed, predictable output, privacy, simplicity or cost-efficiency.
 
 A good architecture might look like:
+
 1. Use LLMs at the edge to route or clean messy data
 2. Pass that to a lightweight classifier or ranking model
 3. Return a response that's fast, traceable and explainable
@@ -263,31 +278,36 @@ A good architecture might look like:
 
 ### Commercial APIs
 
-The easiest route is to use models via APIs:
+The easiest route is to use models via commercial APIs. Anthropic's Claude, OpenAI's GPT and Google's Gemini are the main options.
 
-- Anthropic's Claude
-- OpenAI's GPT-4o
-- Google's Gemini
-
-✅ Fastest time to value — ✅ Extremely powerful models — ⚠️ Black-box — ⚠️ Pay-per-use, costs can scale fast
+- ✅ Fastest time to value
+- ✅ Extremely powerful models
+- ⚠️ Black-box
+- ⚠️ Pay-per-use, costs can scale fast
 
 ### Hosting Locally
 
-Running smaller models like Phi-3-mini or Gemma 2B on a laptop is increasingly feasible via tools like [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/).
+Running smaller models like Phi or Gemma on a laptop is increasingly feasible via tools like [Ollama](https://ollama.com/) or [LM Studio](https://lmstudio.ai/).
 
-✅ Full privacy — ✅ Free after setup — ⚠️ Limited power
+- ✅ Full privacy
+- ✅ Free after setup
+- ⚠️ Limited power
 
 ### Hourly Cloud Compute
 
 Platforms like [RunPod](https://www.runpod.io/) and [LambdaLabs](https://lambda.ai/) let you spin up a GPU machine by the hour.
 
-✅ On-demand power — ✅ No hardware investment — ⚠️ Pay-as-you-go can become expensive
+- ✅ On-demand power
+- ✅ No hardware investment
+- ⚠️ Pay-as-you-go can become expensive
 
 ### Enterprise ML Platforms
 
 Platforms like [Amazon SageMaker](https://aws.amazon.com/sagemaker/) and [MLFlow](https://mlflow.org/) provide integrated environments for model development, deployment and management at enterprise scale.
 
-✅ End-to-end ML workflow management — ✅ Built-in security and governance — ⚠️ Requires enterprise licensing
+- ✅ End-to-end ML workflow management
+- ✅ Built-in security and governance
+- ⚠️ Requires enterprise licensing
 
 ## Acquiring Models from Hugging Face
 
