@@ -1,0 +1,15 @@
+- title: What are AI agents?
+  url: /articles/ai-agents
+  description: A practical explanation of agentic systems and when to use them.
+
+- title: AI-assisted coding
+  url: /articles/ai-assisted-coding
+  description: A look at the tools and approaches reshaping how software gets written.
+
+- title: AI glossary
+  url: /articles/ai-glossary
+  description: Plain-English definitions of LLMs, RAG, embeddings, temperature and the rest of the jargon.
+
+- title: Machine learning models
+  url: /articles/machine-learning-models
+  description: A guide to the model landscape and how to pick the right one for the job.

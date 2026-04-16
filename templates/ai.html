@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .ai-process {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    counter-reset: process-counter;
+  }
+
+  .ai-process li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eef3f8;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    counter-increment: process-counter;
+  }
+
+  .ai-process li:last-child {
+    border-bottom: none;
+  }
+
+  .ai-process li::before {
+    content: counter(process-counter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.75rem;
+    height: 1.75rem;
+    background: #164e87;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+</style>
+
+<h1>AI Integration</h1>
+
+<div class="ai-intro">
+  <p>We build software that puts large language models to practical use. That means applications that automate knowledge work, process documents at scale, answer questions across large volumes of content and generate outputs that previously required a human expert.</p>
+</div>
+
+<hr>
+
+<h2>What we build</h2>
+
+<div class="card-grid">
+  {% for item in ai_use_cases %}
+  <div class="card">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<hr>
+
+<h2>How we work</h2>
+
+<ol class="ai-process">
+  <li><div><strong>Discovery.</strong> We start by understanding what you're trying to automate or improve. We'll challenge assumptions, identify what AI can and can't do reliably and propose an approach that fits your constraints.</div></li>
+  <li><div><strong>Prototype.</strong> Before committing to a full build, we prototype the core AI interaction. This is where you find out what prompt strategies work, what the failure modes are and what accuracy looks like in practice.</div></li>
+  <li><div><strong>Build.</strong> We build production-grade software around the AI. That means proper error handling, logging, testing and infrastructure. Not a demo. Something you can rely on.</div></li>
+  <li><div><strong>Iterate.</strong> AI products improve with use. We stay engaged to refine outputs, tune prompts and evolve the system as your needs change.</div></li>
+</ol>
+
+<hr>
+
+<h2>Background reading</h2>
+
+<p>These articles give a sense of how we think about AI and the problems it solves well.</p>
+
+<div class="card-grid">
+  {% for item in ai_articles %}
+  <a href="{{ item.url }}" class="card">
+    <strong>{{ item.title }}</strong>
+    <span>{{ item.description }}</span>
+  </a>
+  {% endfor %}
+</div>
+
+<hr>
+
+<div class="cta-section" style="margin-top:2rem;">
+  <p>If you've got an AI project in mind and want to talk through what's feasible, get in touch.</p>
+  <a href="/contact-us" class="button">Start a conversation</a>
+</div>
+
+{% endblock %}

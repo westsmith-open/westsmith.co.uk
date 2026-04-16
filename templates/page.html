@@ -2,4 +2,7 @@
 
 {% block content %}
   {{ content|safe }}
+  {% if author %}
+  <p style="margin-top:2rem;padding-top:1rem;border-top:1px solid #eef3f8;font-size:0.875rem;color:#888;">Written by {{ author }}</p>
+  {% endif %}
 {% endblock %}
