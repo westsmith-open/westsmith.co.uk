@@ -59,6 +59,7 @@ header {
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .logo-icon {
@@ -73,6 +74,16 @@ header {
   color: #164e87;
   line-height: 1;
   display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .logo-icon {
+    height: 60px;
+  }
+
+  .logo-text {
+    font-size: 1.6rem;
+  }
 }
 
 nav ul {
@@ -205,6 +216,19 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .logo-icon {
+    height: 100px;
+  }
+
+  .logo-text {
+    font-size: 2.2rem;
+  }
+
+  .logo-container {
+    flex: 1;
+    justify-content: center;
+  }
+
   .content-wrapper {
     flex-direction: column;
   }
