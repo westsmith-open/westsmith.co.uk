@@ -1,0 +1,18 @@
+- title: Custom Software Development
+  description: Bespoke applications and internal tools designed around how your business actually works.
+
+- title: AI Integration
+  description: Practical AI built into your products and workflows. Document generation, natural language interfaces, RAG systems and more, using leading LLM providers.
+  link: /ai
+
+- title: Python & Google Cloud
+  description: Robust backend systems, APIs and data pipelines. Certified Google Cloud Professional Cloud Developer.
+
+- title: Workflow Automation
+  description: Automating the repetitive so your team can focus on work that matters. From simple scripts to full pipeline orchestration.
+
+- title: Slack Integrations
+  description: Custom bots, apps and workflows that bring business logic directly into your team's chat.
+
+- title: monday.com Apps
+  description: Official marketplace apps and custom automations that extend what monday.com can do for your team.

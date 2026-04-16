@@ -1,0 +1,17 @@
+- title: RAG systems
+  description: Retrieval-augmented generation over internal documents, wikis or databases. Ask questions in plain English and get accurate, sourced answers.
+
+- title: Document processing
+  description: Extract, classify and structure information from unstructured documents at scale. Forms, reports, contracts, correspondence and more.
+
+- title: Report generation
+  description: LLM-powered pipelines that turn raw data or analysis into readable, well-structured documents and summaries.
+
+- title: AI agents
+  description: Systems that reason through multi-step tasks using tools and APIs. Useful for automating research, data gathering and decision support workflows.
+
+- title: Natural language interfaces
+  description: Add conversational interfaces to existing products. Query databases, trigger workflows or get guidance without learning a new system.
+
+- title: Existing product integration
+  description: Adding AI to a product you already have. We handle model selection, prompt engineering, testing and production monitoring so the feature ships reliably.

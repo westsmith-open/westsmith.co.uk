@@ -1,0 +1,67 @@
+- label: Product
+  title: Verdanta
+  link: https://verdanta.report
+  external: true
+  image: images/portfolio/verdanta.png
+  description: Professional ESG reports for UK small businesses. Answer a short questionnaire and receive a formatted PDF to share with clients, investors or tender committees. Powered by Anthropic's Claude. No account needed.
+  tags: [Python, Flask, Google Cloud, AI]
+
+- label: Document Processing
+  title: Chartula
+  link: https://chartula.app
+  external: true
+  image: images/portfolio/chartula.png
+  description: A GDPR-compliant platform that automates redaction of personal data from vehicle documents. Upload photos or files, names and addresses are redacted automatically, then share via link or QR code. Python document processing pipeline on Google Cloud.
+  tags: [Python, Google Cloud, AI, Document processing, GDPR]
+
+- label: Document Management
+  title: Town Planner Assistant
+  image: images/portfolio/doc-retrieval.png
+  description: An AI-powered planning assistant built for a local town planner. Helps draft reports, structure arguments and query policy accurately using a curated knowledge base of planning policy documents.
+  tags: [Python, AI, LLM, RAG, Vector database]
+
+- label: Slack Integration
+  title: Illuminate Command Center
+  image: images/portfolio/illuminate.jpg
+  description: A full Slack application replicating the capabilities of an existing web platform, built from scratch with Python and Flask on Google Cloud. Integrated with an existing Auth0-authenticated REST API throughout.
+  tags: [Python, Flask, Google Cloud Run, Slack SDK (Bolt), Auth0]
+
+- label: Product
+  title: Word Import for monday.com
+  link: /products/word-import-for-monday
+  image: images/portfolio/word-import.png
+  description: A monday.com app that converts Word documents into monday docs, preserving rich text, tables and hyperlinks. Built on the monday.com Apps Framework and listed in the official marketplace.
+  tags: [Python, monday.com API, Google Cloud]
+
+- label: Product
+  title: Make a Chart for Slack
+  link: https://makeachart.app/
+  external: true
+  image: images/portfolio/makeachart.png
+  description: A Slack app that turns pasted data into charts, right where your team is talking. Paste numbers into a slash command and get a chart back in seconds. Built with Python and the Slack Bolt SDK.
+  tags: [Python, Slack Bolt SDK, Google Cloud]
+
+- label: Healthcare
+  title: "Babylon Healthcare \u2014 Symptom Checker"
+  image: images/portfolio/babylon.png
+  description: Backend development on a safety-critical symptom checker. Python Flask microservices acting as the translation layer between a Scala symptom engine and the Node.js frontend, with CI/CD improvements across multiple pipeline tools.
+  tags: [Python, Flask, Scala, Node.js, CircleCI]
+
+- label: E-commerce / Telecoms
+  title: "Vodafone.co.uk \u2014 Test Framework"
+  image: images/portfolio/vodafone.png
+  description: Led development of automated performance testing infrastructure for Vodafone's e-commerce platform. Locust and Wiremock on AWS, with Azure DevOps pipelines and Datadog analytics informing test targeting.
+  tags: [Python, Locust, AWS, Datadog, Azure DevOps]
+
+- label: Legacy Modernisation
+  title: Strategy Research Organiser
+  description: Modernised legacy business software that had become unmaintainable. The original was a Java desktop app with no source code — the developer had left five years prior. Delivered with source control, CI/CD and automated regression tests via GitHub Actions.
+  tags: [Python, Java, GitHub Actions, CI/CD]
+
+- label: Open Source
+  title: This website
+  link: https://github.com/westsmith-open/westsmith.co.uk
+  external: true
+  logo: svg/westsmith.svg
+  description: The westsmith.co.uk site itself is open source. Python and Flask as a static site generator with Jinja2 templates, deployed automatically to GitHub Pages via GitHub Actions.
+  tags: [Python, Flask, Simple.CSS, GitHub Pages, GitHub Actions]

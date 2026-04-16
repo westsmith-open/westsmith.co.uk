@@ -361,6 +361,84 @@ footer .social-links a:hover {
   text-decoration: none;
 }
 
+/* Shared card component */
+.card {
+  border: 1px solid #d8e8f4;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #164e87;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+a.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.card:hover {
+  border-color: #164e87;
+  background: #f0f7ff;
+}
+
+a.card strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #164e87;
+  margin-bottom: 0.2rem;
+}
+
+a.card span {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* 2-column responsive card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  background: #e8f4fb;
+  color: #164e87;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
 .quote {
   margin: 2rem auto;
   padding: 0.5rem 0;

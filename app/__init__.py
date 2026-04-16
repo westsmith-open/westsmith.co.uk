@@ -1,7 +1,17 @@
 import shutil
 from pathlib import Path
+import yaml
 from flask import Flask
 from .utils import create_endpoints, create_pages
+
+
+def _load_data(app):
+    data_dir = Path("data")
+    if not data_dir.exists():
+        return
+    for yaml_file in sorted(data_dir.glob("*.yaml")):
+        with open(yaml_file, encoding="utf-8") as f:
+            app.jinja_env.globals[yaml_file.stem] = yaml.safe_load(f)
 
 
 def _make_flask_app():
@@ -15,6 +25,7 @@ def _make_flask_app():
         combined.write(simple_content + "\n" + custom_content)
     app = Flask(__name__, template_folder="../templates")
     app.static_folder = Path("../static")
+    _load_data(app)
     return app
 
 
