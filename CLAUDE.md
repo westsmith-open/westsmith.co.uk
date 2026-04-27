@@ -39,6 +39,10 @@ uv run python build_and_run.py
 
 - `utils/check_links.py` — checks all internal routes and external links for 404s. Run with `uv run python utils/check_links.py`. Not in CI — run manually every now and again or before a release.
 
+## Commit style
+
+Single-line commit messages only. No bullet bodies, no Co-Authored-By trailers.
+
 ## Key things to know
 
 - `node_modules/` must exist before running the app — `yarn install` must be run first
