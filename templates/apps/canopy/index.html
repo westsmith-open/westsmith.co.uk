@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .canopy-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .canopy-screenshot {
+    width: 220px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .canopy-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .canopy-screenshot {
+      width: 160px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="canopy-intro">
+  <img
+    src="/static/images/apps/canopy-mixer.png"
+    alt="Canopy forest sound mixer"
+    class="canopy-screenshot"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Free on the App Store for iPhone.</strong></p>
+
+    <p>Layer nature sounds to build your own forest soundscape. Sleep better, focus deeper, or simply unwind.</p>
+
+    <p><a href="#">Download on the App Store</a></p>
+
+    <h2>Sounds</h2>
+    <p>Six carefully curated forest sounds — Music, Stream, Morning Birds, Rain, Thunder, Campfire. Set each one to the volume you want, tap play, and Canopy runs in the background while you sleep, work, or read.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Mix up to six sounds simultaneously with individual volume control</li>
+      <li>Plays in the background when your phone is locked</li>
+      <li>Control playback from your lock screen</li>
+      <li>Audio pauses automatically when you unplug your headphones</li>
+      <li>No account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/canopy/support">Support</a> · <a href="/apps/canopy/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}
