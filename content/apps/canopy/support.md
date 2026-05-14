@@ -7,4 +7,4 @@ For help with Canopy, email [info@westsmith.co.uk](mailto:info@westsmith.co.uk) 
 
 ---
 
-[Back to Canopy](./index)
+[Back to Canopy](/apps/canopy)

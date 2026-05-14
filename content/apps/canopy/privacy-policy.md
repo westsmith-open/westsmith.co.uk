@@ -13,3 +13,7 @@ Canopy does not collect, store, or transmit any personal data.
 For questions, contact [info@westsmith.co.uk](mailto:info@westsmith.co.uk).
 
 *Last updated: May 2026*
+
+---
+
+[Back to Canopy](/apps/canopy)
