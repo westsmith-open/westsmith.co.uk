@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .nook-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .nook-screenshot {
+    width: 220px;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .nook-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .nook-screenshot {
+      width: 160px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="nook-intro">
+  <img
+    src="/static/images/apps/nook-mixer.png"
+    alt="Nook cosy cafe sound mixer"
+    class="nook-screenshot"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Free on the App Store for iPhone.</strong></p>
+
+    <p>Layer cafe sounds to recreate the atmosphere of your favourite coffee shop. Focus, relax, or fall asleep to the hum of a cosy nook.</p>
+
+    <p><em>Coming soon to the App Store.</em></p>
+
+    <h2>Sounds</h2>
+    <p>Six carefully chosen cafe sounds — Jazz, Espresso Machine, Chatter, Rain on Window, Cups &amp; Cutlery, Fireplace. Set each one to the volume you want, tap play, and Nook runs in the background while you work, read, or unwind.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Mix up to six sounds simultaneously with individual volume control</li>
+      <li>Plays in the background when your phone is locked</li>
+      <li>Control playback from your lock screen</li>
+      <li>Audio pauses automatically when you unplug your headphones</li>
+      <li>No account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/nook/support">Support</a> · <a href="/apps/nook/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}
