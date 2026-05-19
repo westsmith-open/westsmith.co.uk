@@ -134,13 +134,20 @@
 
   <hr />
 
-  <div class="section testimonial">
-    <blockquote>
-      "Worked quickly and turned around additional requests and changes quickly
-      and thoroughly. Overall a fantastic experience and would recommend him
-      without reservations."
-    </blockquote>
-    <cite>— President, Center for Strategy Research</cite>
+  <div class="section">
+    <h2>What clients say</h2>
+    <div class="review-grid">
+      {% for review in reviews %}
+      <div class="review-card card">
+        <blockquote>"{{ review.text }}"</blockquote>
+        <div class="review-attribution">
+          <span class="reviewer-name">{{ review.reviewer }}</span>
+          {% if review.title %}<span class="reviewer-title">{{ review.title }}</span>{% endif %}
+          {% if review.url %}<a class="review-source" href="{{ review.url }}" target="_blank" rel="noopener">Read on {{ review.source }}</a>{% else %}<span class="review-source">{{ review.source }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 
   <hr />

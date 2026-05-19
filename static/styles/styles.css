@@ -312,17 +312,56 @@ footer .social-links a:hover {
   color: #007acc;
 }
 
-.testimonial {
-  font-style: italic;
-  margin: 2rem 0;
-  text-align: center;
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-.testimonial cite {
-  display: block;
-  margin-top: 1rem;
-  font-style: normal;
-  font-weight: bold;
+@media (max-width: 640px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review-card blockquote {
+  font-style: italic;
+  color: #333;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.review-attribution {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #164e87;
+}
+
+.reviewer-title {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.review-source {
+  font-size: 0.78rem;
+  color: #888;
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+a.review-source:hover {
+  color: #164e87;
+  text-decoration: underline;
 }
 
 .cta-section {
