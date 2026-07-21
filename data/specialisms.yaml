@@ -1,12 +1,12 @@
-- title: Custom Software Development
-  description: Bespoke applications and internal tools designed around how your business actually works.
-
 - title: AI Integration
   description: Practical AI built into your products and workflows. Document generation, natural language interfaces, RAG systems and more, using leading LLM providers.
   link: /ai
 
-- title: Python & Google Cloud
-  description: Robust backend systems, APIs and data pipelines. Certified Google Cloud Professional Cloud Developer.
+- title: Python Development
+  description: Robust backend systems, APIs and data pipelines, all built with clean, maintainable Python code.
+
+- title: Custom Software Development
+  description: Bespoke applications and internal tools designed around how your business actually works.
 
 - title: Workflow Automation
   description: Automating the repetitive so your team can focus on work that matters. From simple scripts to full pipeline orchestration.
