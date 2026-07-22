@@ -1,10 +1,13 @@
-description: Westsmith builds focused tools for businesses and modern teams. Browse our products including Verdanta, Word Import for monday.com and Make a Chart for Slack.
+description: Westsmith builds focused tools for businesses and modern teams. Browse our products including AdsAdmin, Verdanta, Word Import for monday.com and Make a Chart for Slack.
 
 # Our Products
 
 We build focused, practical tools for businesses and modern teams.
 
 ---
+
+- [**AdsAdmin**](./adsadmin)
+  A free, read-only Chrome extension that strips the noise out of Google Ads and gives small business owners straightforward PPC guidance right in the sidebar.
 
 - [**Verdanta**](https://verdanta.report)
   Professional ESG reports for UK small businesses. Answer a short questionnaire and get a formatted PDF report you can share with clients, tender committees and investors. £49, no account needed.
