@@ -4,7 +4,7 @@ description: AdsAdmin is a free, read-only Chrome extension that strips the nois
 
 A cleaner, read-only sidebar for Google Ads. Built for small business owners and freelancers running their own campaigns, not agencies.
 
-*Coming soon to the Chrome Web Store.*
+[Get it on the Chrome Web Store](https://chromewebstore.google.com/detail/adsadmin/eifajnbkpnoimnodgnbnjaanpjgncdaj)
 
 ## What it does
 
@@ -23,5 +23,6 @@ AdsAdmin doesn't collect, store, or transmit any of your data. It runs entirely 
 
 ## Links
 
+* [Chrome Web Store listing](https://chromewebstore.google.com/detail/adsadmin/eifajnbkpnoimnodgnbnjaanpjgncdaj)
 * [Privacy Policy](./privacy-policy)
 * [Terms of Service](./terms-of-service)
