@@ -1,3 +1,11 @@
+- label: Open Source
+  title: jev-compare
+  link: https://github.com/westsmith-open/jev-compare
+  external: true
+  image: images/portfolio/jev-compare.png
+  description: A side-by-side test bench for AI decision models. Sends the same labelled item to a decision model (TypeSafe's Jev) and a general-purpose LLM (Gemini Flash) and shows exactly what each one is sent and returns, with time, cost and accuracy for every call. A batch mode adds latency spreads, cost per million items and confidence-threshold routing.
+  tags: [Python, FastAPI, AI, LLM, OpenRouter, GitHub Actions]
+
 - label: Product
   title: Verdanta
   link: https://verdanta.report
