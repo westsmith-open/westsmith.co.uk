@@ -9,10 +9,14 @@ The first time you import, Word Import asks for your permission to create
 docs for you. Click **Give permission** (or **Allow and import**) and accept
 in the window that opens. You only do this once.
 
-If your account's admin installed an earlier version of Word Import, monday
-may show a bar saying the app needs additional permissions. An admin accepts
-them once (in **Administration → Apps**, or from the bar), and then everyone
-can use the new version.
+If your account installed an earlier version of Word Import, monday shows a
+bar saying the app needs additional permissions. An admin approves them
+once for the whole account: click the bar, and on the Word Import page in
+the monday marketplace click **Install**. Despite the name, this doesn't
+install a second copy or remove anything: your docs and imports stay as
+they are. It just approves the new permissions, and the bar goes away
+after a refresh. Until an admin does this, everyone else keeps seeing the
+bar.
 
 Guests and viewers can't import files, as importing creates docs.
 
