@@ -20,18 +20,16 @@ bar.
 
 Guests and viewers can't import files, as importing creates docs.
 
-![Giving permission](/static/images/word-import-permission.png)
-
 ## Import into a new doc
 
 1. In your workspace's left pane, under **Workspace apps**, click
    **Word Import**. This opens the **Word import jobs** page.
 2. Click **Import Word files**.
 3. Drop a Word file on the page, or click **Choose files**.
-4. The doc takes the Word file's name; change it if you like.
-5. Under **Location**, choose where the doc goes: the workspace's top level
+4. Under **Location**, choose where the doc goes: the workspace's top level
    or one of its folders.
-6. Click **Create doc**.
+5. The **Doc name** is the Word file's name; change it if you like.
+6. Click **Import**.
 
 You'll see the import's progress, and monday sends you a notification when
 the doc is ready.
