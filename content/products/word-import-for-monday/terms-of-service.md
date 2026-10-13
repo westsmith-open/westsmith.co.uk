@@ -1,29 +1,29 @@
 # Word Import Terms of Service
 
-Last updated: 5th November 2024
+Last updated: 13th October 2026
 
  1. Acceptance of Terms
 
-    By accessing or using this service, you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not use our Service. The Service is owned and operated by Westsmith Ltd, a company registered in the United Kingdom ("We", "Us", or "Our").
+    By accessing or using this service, you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not use our Service. The Service is owned and operated by Westsmith Ltd, a company registered in the United Kingdom ("We", "Us" or "Our").
 
  2. Description of Service
 
-    Word Import is a monday.com app that allows users to create Workdocs for monday.com from MS Word files.
+    Word Import is a monday.com app that turns Microsoft Word files into monday.com docs: as new docs, into an existing doc or from Word files on monday.com boards. How we handle your information is described in the Word Import Privacy Policy.
 
  3. User Responsibilities
-    1. You agree not to use the Service for any unlawful purpose or in any way that could damage, disable, overburden, or impair the Service.
+    1. You agree not to use the Service for any unlawful purpose or in any way that could damage, disable, overburden or impair the Service.
 
-    2. You are responsible for ensuring you have the right to use, process, and share any data you input into the Service.
+    2. You are responsible for ensuring you have the right to use, process and share any data you input into the Service.
 
  4. Intellectual Property
-    1. The Service and its original content, features, and functionality are owned by Westsmith Ltd.
+    1. The Service and its original content, features and functionality are owned by Westsmith Ltd.
 
     2. You retain all rights to the data you input into the Service. By using the Service, you grant us a license to process and display this data solely for the purpose of providing the Service to you.
 
  5. Limitations of Liability
     1. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
 
-    2. In no event shall Westsmith Ltd be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
+    2. In no event shall Westsmith Ltd be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
 
  6. Changes to Service
 
