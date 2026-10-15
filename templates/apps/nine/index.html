@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .nine-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .nine-icon {
+    width: 160px;
+    border-radius: 36px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .nine-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .nine-icon {
+      width: 120px;
+      border-radius: 27px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="nine-intro">
+  <img
+    src="/static/images/apps/nine-icon.png"
+    alt="Nine app icon"
+    class="nine-icon"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Coming soon to the App Store for iPhone.</strong></p>
+
+    <p><strong>No ads. Ever.</strong> No banners, no pop-ups, no videos between puzzles — not even in the free version.</p>
+
+    <p>Every puzzle has exactly one solution and is checked by a solver before you see it, so you never have to guess. Difficulty is graded by the techniques you'll need — from singles on Easy to pairs, triples and X-Wings on Expert.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Notes that clear themselves when you place a number</li>
+      <li>Free, unlimited undo</li>
+      <li>Highlights for the row, column, box and matching digits</li>
+      <li>Your puzzle is saved automatically</li>
+      <li>Dark and light themes</li>
+      <li>No account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/nine/support">Support</a> · <a href="/apps/nine/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}
