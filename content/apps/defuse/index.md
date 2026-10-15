@@ -1,4 +1,4 @@
-description: Defuse is Minesweeper for iPhone where every board can be solved by logic. No 50/50 guesses, no ads.
-title: Defuse — No Guess Minesweeper | Westsmith
+description: Defuse is Minesweeper for iPhone with no ads, ever — and every board can be solved by logic, so you never have to guess.
+title: Defuse — Minesweeper, No Ads | Westsmith
 
-# Defuse — No Guess Minesweeper
+# Defuse — Minesweeper, No Ads
