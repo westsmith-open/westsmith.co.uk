@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .defuse-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .defuse-icon {
+    width: 160px;
+    border-radius: 36px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .defuse-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .defuse-icon {
+      width: 120px;
+      border-radius: 27px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="defuse-intro">
+  <img
+    src="/static/images/apps/defuse-icon.png"
+    alt="Defuse app icon"
+    class="defuse-icon"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Coming soon to the App Store for iPhone.</strong></p>
+
+    <p>Minesweeper without the coin flips. Every board in No Guess mode is checked by a solver before you see it, so there is always a logical next move. If you lose, it was a mistake, not bad luck.</p>
+
+    <h2>Modes</h2>
+    <p><strong>No Guess</strong> — every board solvable by logic. <strong>Classic</strong> — random mines, like the original. Best times are kept separately for each, across Beginner, Intermediate and Expert.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Tap to reveal, long-press to flag, tap a number to clear around it</li>
+      <li>Your first tap is always safe</li>
+      <li>Pinch to zoom on Expert boards</li>
+      <li>Dark and light themes, with haptics on every move</li>
+      <li>No ads, no account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/defuse/support">Support</a> · <a href="/apps/defuse/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}
