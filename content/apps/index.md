@@ -13,6 +13,9 @@ Simple, focused iOS apps that do one thing well.
 - [**Defuse — Minesweeper, No Ads**](./defuse)
   Minesweeper with no ads, ever — and every board can be solved by logic, so you never have to guess. Coming soon to the App Store.
 
+- [**Patience — Solitaire, No Ads**](./patience)
+  Klondike, FreeCell and Spider with no ads, ever — and deals you can always win. Coming soon to the App Store.
+
 - [**Canopy — Forest Sound Mixer**](./canopy)
   Layer nature sounds to create your own forest soundscape. Sleep, focus, or unwind. Free on the App Store.
 
