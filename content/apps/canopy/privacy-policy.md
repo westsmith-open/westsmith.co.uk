@@ -3,7 +3,7 @@ title: Canopy Privacy Policy | Westsmith
 
 # Canopy Privacy Policy
 
-Canopy does not collect, store, or transmit any personal data.
+Canopy does not collect, store or transmit any personal data.
 
 - No account is required
 - No analytics or tracking

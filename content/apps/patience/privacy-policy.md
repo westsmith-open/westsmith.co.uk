@@ -3,10 +3,10 @@ title: Patience Privacy Policy | Westsmith
 
 # Patience Privacy Policy
 
-Patience does not collect, store, or transmit any personal data.
+Patience does not collect, store or transmit any personal data.
 
 - No account is required
-- No analytics, tracking, or advertising
+- No analytics, tracking or advertising
 - No internet connection required after download
 - Games in progress, statistics and settings stay on your device
 - Purchases of Patience Pro are handled by Apple. We never see your payment details.

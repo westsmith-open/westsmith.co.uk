@@ -3,10 +3,10 @@ title: Nine Privacy Policy | Westsmith
 
 # Nine Privacy Policy
 
-Nine does not collect, store, or transmit any personal data.
+Nine does not collect, store or transmit any personal data.
 
 - No account is required
-- No analytics, tracking, or advertising
+- No analytics, tracking or advertising
 - No internet connection required after download
 - Puzzles in progress, best times and settings stay on your device
 - Purchases of Nine Pro are handled by Apple. We never see your payment details.

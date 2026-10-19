@@ -17,7 +17,7 @@ Simple, focused iOS apps that do one thing well.
   Klondike, FreeCell and Spider with no ads, ever, and deals you can always win. Coming soon to the App Store.
 
 - [**Canopy — Forest Sound Mixer**](./canopy)
-  Layer nature sounds to create your own forest soundscape. Sleep, focus, or unwind. Free on the App Store.
+  Layer nature sounds to create your own forest soundscape. Sleep, focus or unwind. Free on the App Store.
 
 - [**Nook — Cosy Cafe Sound Mixer**](./nook)
   Recreate the atmosphere of your favourite cafe. Jazz, espresso machine, chatter, rain and more. Free on the App Store.

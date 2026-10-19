@@ -3,7 +3,7 @@ title: Nook Privacy Policy | Westsmith
 
 # Nook Privacy Policy
 
-Nook does not collect, store, or transmit any personal data.
+Nook does not collect, store or transmit any personal data.
 
 - No account is required
 - No analytics or tracking
