@@ -8,7 +8,7 @@ For help with Nine, email [info@westsmith.co.uk](mailto:info@westsmith.co.uk) an
 ## Common questions
 
 **Do puzzles ever need guessing?**
-No. Every puzzle has exactly one solution and is checked by a solver before you see it, so it can always be finished by logic alone.
+No. Every puzzle has exactly one solution. A solver checks it before you see it, so you can always finish it by logic alone.
 
 **How do I pencil in notes?**
 Tap Notes below the grid, then tap numbers to add or remove them. Notes clear themselves when you place a number in the same row, column or box.
