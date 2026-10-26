@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .cozyjong-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .cozyjong-icon {
+    width: 160px;
+    border-radius: 36px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .cozyjong-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .cozyjong-icon {
+      width: 120px;
+      border-radius: 27px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="cozyjong-intro">
+  <img
+    src="/static/images/apps/cozyjong-icon.png"
+    alt="Cozyjong app icon"
+    class="cozyjong-icon"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Coming soon to the App Store for iPhone and iPad.</strong></p>
+
+    <p><strong>No ads. Ever.</strong> No banners, no pop-ups, no videos between games. Not even in the free version.</p>
+
+    <p>Mahjong solitaire at its most relaxing. Every deal is built so it can be cleared, and if you paint yourself into a corner, Shuffle rearranges the tiles that are left.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Garden, Pyramid and the classic Turtle free</li>
+      <li>Seven more layouts and four picture tile sets with Cozyjong Pro, a one-time purchase</li>
+      <li>Five cosy tables (Tea House, Clockwork, Library, Conservatory and Night Train), each with its own music</li>
+      <li>Classic tiles, or Large Print tiles with big numbers and simple shapes, on light or dark faces</li>
+      <li>Hints that show a pair that keeps the game winnable</li>
+      <li>Free, unlimited undo and shuffles, and automatic saving</li>
+      <li>No account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/cozyjong/support">Support</a> · <a href="/apps/cozyjong/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}
