@@ -17,7 +17,7 @@ Yes. Every deal is built so it can be cleared. You can still play yourself into 
 There are still matches, but none of them lead to a clear board from where you are. Undo a few moves to find another way, or shuffle.
 
 **The tiles are hard to read. What can I do?**
-Choose Large Print tiles on the home screen, or tap Style during a game. They show big numbers and simple shapes. You can also switch to dark faces if bright white is uncomfortable, and turn on Dim blocked tiles to see which ones are free.
+Choose Large Print tiles on the home screen, or tap Style during a game. They show big numbers and simple shapes. You can also switch to dark tiles if bright white is uncomfortable, and turn on Dim blocked tiles to see which ones are free.
 
 **How do I change the table or turn off the music?**
 Pick a table on the home screen, or tap Style during a game. Music, sounds and haptics each have their own switch on the home screen, and the speaker button in a game turns the music on or off.
