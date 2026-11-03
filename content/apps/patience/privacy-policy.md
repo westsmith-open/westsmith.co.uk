@@ -1,19 +1,30 @@
-description: Privacy policy for Patience, the no ads solitaire game for iPhone and iPad by Westsmith.
+description: Privacy policy for Patience on iPhone, iPad and Android by Westsmith.
 title: Patience Privacy Policy | Westsmith
 
 # Patience Privacy Policy
 
-Patience does not collect, store or transmit any personal data.
+Patience is made by Westsmith Ltd. This policy covers the iPhone, iPad and Android versions.
 
-- You don't need an account
-- There's no analytics, tracking or advertising
-- Works without an internet connection after download
-- Games in progress, statistics and settings stay on your device
-- Apple handles purchases of Patience Pro. We never see your payment details.
+## Your game data
 
-For questions, contact [info@westsmith.co.uk](mailto:info@westsmith.co.uk).
+You do not need an account to play. We do not use advertising, analytics or tracking SDKs in the game. Games in progress, statistics and settings are stored on your device. We do not receive copies of your saved games.
 
-*Last updated: October 2026*
+Deleting the app's local data removes its saved games, statistics and settings. Removing local game data does not cancel your Pro purchase.
+
+## Purchases
+
+Apple or Google Play handles purchases of Patience Pro, depending on your platform. The game checks purchase information with the relevant store to unlock Pro and restore purchases. Westsmith does not receive your card or bank details. Purchase processing and store records follow the relevant provider's privacy policy.
+
+- [Apple privacy policy](https://www.apple.com/legal/privacy/)
+- [Google privacy policy](https://policies.google.com/privacy)
+
+## Support
+
+If you email us, we receive your email address and the information you choose to include. We use it to answer your request and keep the correspondence only as long as needed to provide support and meet applicable record-keeping obligations. Do not include passwords or payment details.
+
+For privacy questions or requests to delete support correspondence, contact [info@westsmith.co.uk](mailto:info@westsmith.co.uk).
+
+Last updated 3 November 2026
 
 ---
 

@@ -1,4 +1,4 @@
-description: Support for Patience, the no ads solitaire game for iPhone and iPad by Westsmith.
+description: Support for Patience, the no ads solitaire game for iPhone, iPad and Android by Westsmith.
 title: Patience Support | Westsmith
 
 # Patience Support
@@ -8,10 +8,10 @@ For help with Patience, email [info@westsmith.co.uk](mailto:info@westsmith.co.uk
 ## Common questions
 
 **What does Winnable mean?**
-In Winnable mode, a solver checks every deal before you see it, so it can always be won. You can still play yourself into a corner, though, so a winnable deal can be lost. Classic mode deals random hands, like the original, and some of those can't be won.
+Winnable mode is available for Klondike and FreeCell. A solver checks each deal before you see it, so a winning line exists. Spider deals are random. You can still play yourself into a corner, though, so a winnable deal can be lost. Classic mode deals random hands, like the original, and some of those can't be won.
 
 **The hint says "No way forward". What now?**
-It means no sequence of moves can win the game from where you are. Undo a few moves to find another way, or start a new deal. Patience keeps your undo history even if you leave the game.
+Try undoing a few moves to find another way, or start a new deal. Patience keeps your undo history even if you leave the game. A missing hint does not always mean the deal cannot be won.
 
 **How do I change the table or turn off the music?**
 Pick a table on the home screen, or tap Table during a game. You can switch music, sounds and haptics on or off on the home screen, and the speaker button in a game turns the music on or off.
@@ -23,7 +23,7 @@ Turn on Large cards on the home screen, or tap the card style button during a ga
 Patience saves automatically. Choose the same game on the home screen and tap Resume.
 
 **How do I restore Patience Pro on a new device?**
-Tap Restore purchases at the bottom of the home screen.
+On iPhone or iPad, sign into the Apple Account used for the purchase. On Android, use the Google Play account used for the purchase. Then tap Restore purchases at the bottom of the home screen. Pro purchases are separate on Apple and Google Play and do not transfer between them.
 
 ---
 

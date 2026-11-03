@@ -1,4 +1,4 @@
-description: Support for Cozyjong, the no ads mahjong solitaire game for iPhone and iPad by Westsmith.
+description: Support for Cozyjong, the no ads mahjong solitaire game for iPhone, iPad and Android by Westsmith.
 title: Cozyjong Support | Westsmith
 
 # Cozyjong Support
@@ -14,7 +14,7 @@ Clear the table by matching pairs of identical tiles. You can only pick a free t
 Yes. Every deal is built so it can be cleared. You can still play yourself into a corner, so if you run out of matches, tap Shuffle to rearrange the tiles that are left. Undo is unlimited too.
 
 **What does "No way forward" mean?**
-There are still matches, but none of them lead to a clear board from where you are. Undo a few moves to find another way, or shuffle.
+Try undoing a few moves to find another way, or tap Shuffle to rearrange the tiles that are left.
 
 **The tiles are hard to read. What can I do?**
 Choose Large Print tiles on the home screen, or tap Style during a game. They show big numbers and simple shapes. You can also switch to dark tiles if bright white is uncomfortable, and turn on Dim blocked tiles to see which ones are free.
@@ -26,7 +26,7 @@ Pick a table on the home screen, or tap Style during a game. Music, sounds and h
 Cozyjong saves automatically. Choose the same layout on the home screen and tap Resume.
 
 **How do I restore Cozyjong Pro on a new device?**
-Tap Restore purchases at the bottom of the home screen.
+On iPhone or iPad, sign into the Apple Account used for the purchase. On Android, use the Google Play account used for the purchase. Then tap Restore purchases at the bottom of the home screen. Pro purchases are separate on Apple and Google Play and do not transfer between them.
 
 ---
 

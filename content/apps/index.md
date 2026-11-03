@@ -1,9 +1,11 @@
-description: iOS apps by Westsmith. Simple, focused tools that do one thing well.
+description: Mobile Apps by Westsmith
 title: Apps | Westsmith
 
 # Apps
 
-Simple, focused iOS apps that do one thing well.
+Westsmith develops a range of mobile apps, from relaxing games to focused everyday tools. We sell them as products in their own right and use them to demonstrate our expertise in mobile app development.
+
+Explore the apps below, or [talk to us about developing a mobile app for your business](/contact-us).
 
 ---
 
@@ -14,10 +16,10 @@ Simple, focused iOS apps that do one thing well.
   Minesweeper with no ads, ever, and every board can be solved by logic, so you never have to guess. Free on the App Store.
 
 - [**Patience — Solitaire, No Ads**](./patience)
-  Klondike, FreeCell and Spider with no ads, ever, and deals you can always win. Coming soon to the App Store.
+  Klondike, FreeCell and Spider at five cosy tables. Choose checked Winnable deals for Klondike and FreeCell, or random Classic deals. Coming to iPhone, iPad and Android.
 
 - [**Cozyjong — Mahjong, No Ads**](./cozyjong)
-  Mahjong solitaire with no ads, ever, and deals you can always clear. Coming soon to the App Store.
+  Mahjong solitaire with clearable deals, six tile designs and five musical tables. Coming to iPhone, iPad and Android.
 
 - [**Canopy — Forest Sound Mixer**](./canopy)
   Layer nature sounds to create your own forest soundscape. Sleep, focus or unwind. Free on the App Store.
