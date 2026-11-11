@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+  .bobstackit-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+
+  .bobstackit-icon {
+    width: 160px;
+    border-radius: 36px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+
+  @media (max-width: 600px) {
+    .bobstackit-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .bobstackit-icon {
+      width: 120px;
+      border-radius: 27px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="bobstackit-intro">
+  <img
+    src="/static/images/apps/bob-stackit-icon.png"
+    alt="Bob Stackit app icon"
+    class="bobstackit-icon"
+    loading="lazy"
+  />
+  <div>
+    <p><strong>Coming soon to the App Store and Google Play.</strong></p>
+
+    <p>A Victorian Christmas falling blocks game. Robins, plum puddings, holly, baubles, bells and red ribbons fall onto an old Christmas card. Complete a row and the bells ring as it clears.</p>
+
+    <p><strong>Completely free.</strong> No adverts, no purchases, no account and no tracking.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Seven Christmas motifs and three Victorian card backdrops</li>
+      <li>Big buttons for two thumbs, with hold to repeat</li>
+      <li>A ghost piece and a preview of the next piece</li>
+      <li>Gentle mode for a slower, relaxed game</li>
+      <li>Strings, sleigh bells and chimes, each with its own switch</li>
+      <li>No account, no data collected, no internet required</li>
+    </ul>
+
+    <p><a href="/apps/bob-stackit/support">Support</a> · <a href="/apps/bob-stackit/privacy-policy">Privacy Policy</a></p>
+  </div>
+</div>
+
+{% endblock %}

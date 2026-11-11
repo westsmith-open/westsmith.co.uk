@@ -21,6 +21,9 @@ Explore the apps below, or [talk to us about developing a mobile app for your bu
 - [**Cozyjong — Mahjong, No Ads**](./cozyjong)
   Mahjong solitaire with clearable deals, six tile designs and five musical tables. Free on the App Store and Google Play.
 
+- [**Bob Stackit, Christmas Falling Blocks**](./bob-stackit)
+  A Victorian Christmas falling blocks game with robins, puddings and holly. Completely free with no adverts. Coming soon to the App Store and Google Play.
+
 - [**Canopy — Forest Sound Mixer**](./canopy)
   Layer nature sounds to create your own forest soundscape. Sleep, focus or unwind. Free on the App Store.
 
