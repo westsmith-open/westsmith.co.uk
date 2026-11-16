@@ -10,10 +10,10 @@ Explore the apps below, or [talk to us about developing a mobile app for your bu
 ---
 
 - [**Nine — Sudoku, No Ads**](./nine)
-  Sudoku with no ads, ever, and every puzzle has one solution you can reach by logic alone. Free on the App Store.
+  Sudoku with no ads, ever, and every puzzle has one solution you can reach by logic alone. Free on the App Store and Google Play.
 
 - [**Defuse — Minesweeper, No Ads**](./defuse)
-  Minesweeper with no ads, ever, and every board can be solved by logic, so you never have to guess. Free on the App Store.
+  Minesweeper with no ads, ever, and every board can be solved by logic, so you never have to guess. Free on the App Store and Google Play.
 
 - [**Patience — Solitaire, No Ads**](./patience)
   Klondike, FreeCell and Spider at five cosy tables. Choose checked Winnable deals for Klondike and FreeCell, or random Classic deals. Free on Google Play. Coming to iPhone and iPad.

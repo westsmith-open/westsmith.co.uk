@@ -1,4 +1,4 @@
-description: Support for Defuse, the no guess Minesweeper game for iPhone by Westsmith.
+description: Support for Defuse, the no guess Minesweeper game for iPhone, iPad and Android by Westsmith.
 title: Defuse Support | Westsmith
 
 # Defuse Support
@@ -14,7 +14,7 @@ A solver checks every No Guess board before you see it. There is always a logica
 Long-press a tile, or switch the toggle at the bottom of the screen to Flag and tap.
 
 **How do I restore Defuse Pro on a new device?**
-Open Settings (the palette icon on the home screen) and tap Restore purchases.
+Sign in with the account you bought Defuse Pro with. That's your Apple Account on iPhone or iPad, or your Google Play account on Android. Then open Settings and tap Restore purchases. On iPhone and iPad, Settings is the palette icon on the home screen. On Android, tap Settings on the home screen. Pro purchases are separate on Apple and Google Play and don't transfer between them.
 
 ---
 

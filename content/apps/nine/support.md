@@ -1,4 +1,4 @@
-description: Support for Nine, the no ads Sudoku game for iPhone by Westsmith.
+description: Support for Nine, the no ads Sudoku game for iPhone, iPad and Android by Westsmith.
 title: Nine Support | Westsmith
 
 # Nine Support
@@ -17,7 +17,7 @@ Tap Notes below the grid, then tap numbers to add or remove them. Notes clear th
 Nine saves automatically. Tap the difficulty on the home screen marked Resume.
 
 **How do I restore Nine Pro on a new device?**
-Open Settings (the palette icon on the home screen) and tap Restore purchases.
+Sign in with the account you bought Nine Pro with. That's your Apple Account on iPhone or iPad, or your Google Play account on Android. Then open Settings and tap Restore purchases. On iPhone and iPad, Settings is the palette icon on the home screen. On Android, tap Settings on the home screen. Pro purchases are separate on Apple and Google Play and don't transfer between them.
 
 ---
 
