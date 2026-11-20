@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  .teeter-intro {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  .teeter-icon {
+    width: 160px;
+    border-radius: 36px;
+    display: block;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  }
+  .teeter-screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 680px;
+    margin: 2rem auto;
+  }
+  .teeter-screenshots img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+  }
+  @media (max-width: 600px) {
+    .teeter-intro { grid-template-columns: 1fr; }
+    .teeter-icon { width: 120px; border-radius: 27px; margin: 0 auto; }
+  }
+</style>
+
+{{ content|safe }}
+
+<div class="teeter-intro">
+  <img src="/static/images/apps/chimney-teeter-icon.png" alt="Chimney Teeter app icon" class="teeter-icon" width="160" height="160">
+  <div>
+    <p><strong>Free on the App Store for iPhone and iPad. Coming soon to Android.</strong></p>
+    <p>
+      <a href="https://apps.apple.com/gb/app/chimney-teeter/id6837225838"><img src="/static/images/apps/app-store-badge.svg" alt="Download on the App Store" height="40" style="vertical-align: middle;"></a>
+    </p>
+    <p>A rooftop Christmas, one tap at a time. Tilt the snowy slates and guide presents into clear chimneys. Avoid the smoke and look out for Father Christmas.</p>
+    <p>Play short rounds, beat your best score and enjoy the Christmas music. Father Christmas arrives every fifth delivery and earns five times the positive points.</p>
+    <p><strong>The whole game is free.</strong> No adverts, no purchases, no account and no tracking. Works offline.</p>
+    <h2>Features</h2>
+    <ul>
+      <li>One tap tilts every snowy roof</li>
+      <li>Thirty deliveries or five smoky landings to finish a round</li>
+      <li>Illustrated winter rooftops and Christmas music</li>
+      <li>Separate switches for music, sound effects and haptics</li>
+      <li>Pause whenever you need a break</li>
+    </ul>
+    <p><a href="/apps/chimney-teeter/support">Support</a> · <a href="/apps/chimney-teeter/privacy-policy">Privacy policy</a></p>
+  </div>
+</div>
+<div class="teeter-screenshots" aria-label="Chimney Teeter screenshots">
+  <img src="/static/images/apps/chimney-teeter-rooftops.jpg" alt="Chimney Teeter with snowy rooftops and presents" loading="lazy" width="603" height="1311">
+  <img src="/static/images/apps/chimney-teeter-christmas.jpg" alt="Christmas gameplay with presents falling towards the chimneys" loading="lazy" width="603" height="1311">
+</div>
+{% endblock %}

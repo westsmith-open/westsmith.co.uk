@@ -22,7 +22,7 @@ Explore the apps below, or [talk to us about developing a mobile app for your bu
   Mahjong solitaire with clearable deals, six tile designs and five musical tables. Free on the App Store and Google Play.
 
 - [**Chimney Teeter**](./chimney-teeter)
-  Tilt snowy roofs and guide presents into clear chimneys. A free Christmas arcade game with no purchases or third-party adverts. Coming soon to iPhone and iPad.
+  Tilt snowy roofs and guide presents into clear chimneys. A free Christmas arcade game with no purchases or third-party adverts. Free on the App Store for iPhone and iPad. Coming soon to Android.
 
 - [**Bob Stackit, Christmas Falling Blocks**](./bob-stackit)
   A Victorian Christmas falling blocks game with robins, puddings and holly. Completely free with no adverts. On Google Play now and coming soon to the App Store.
