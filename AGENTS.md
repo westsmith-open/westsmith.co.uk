@@ -1,4 +1,4 @@
-# westsmith.co.uk — Claude Code Guide
+# westsmith.co.uk
 
 ## Project overview
 
