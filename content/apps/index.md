@@ -21,6 +21,9 @@ Explore the apps below, or [talk to us about developing a mobile app for your bu
 - [**Cozyjong — Mahjong, No Ads**](./cozyjong)
   Mahjong solitaire with clearable deals, six tile designs and five musical tables. Free on the App Store and Google Play.
 
+- [**Chimney Chase**](./chimney-chase)
+  Guide Santa between snowy rooftops, deliver presents and light up the village. A free Christmas arcade game. Coming soon for iPhone and iPad.
+
 - [**Chimney Teeter**](./chimney-teeter)
   Tilt snowy roofs and guide presents into clear chimneys. A free Christmas arcade game with no purchases or third-party adverts. Free on the App Store for iPhone and iPad. Coming soon to Android.
 
