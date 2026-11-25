@@ -25,7 +25,7 @@ Explore the apps below, or [talk to us about developing a mobile app for your bu
   Guide Santa between snowy rooftops, deliver presents and light up the village. A free Christmas arcade game. Coming soon for iPhone and iPad.
 
 - [**Chimney Teeter**](./chimney-teeter)
-  Tilt snowy roofs and guide presents into clear chimneys. A free Christmas arcade game with no purchases or third-party adverts. Free on the App Store for iPhone and iPad. Coming soon to Android.
+  Tilt snowy roofs and guide presents into clear chimneys. A free Christmas arcade game with no purchases or third-party adverts. Free on the App Store and Google Play.
 
 - [**Bob Stackit, Christmas Falling Blocks**](./bob-stackit)
   A Victorian Christmas falling blocks game with robins, puddings and holly. Completely free with no adverts. On Google Play now and coming soon to the App Store.
